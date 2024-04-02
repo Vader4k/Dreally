@@ -3,7 +3,7 @@ import { Navbar, Footer } from '../components'
 
 const Layout = () => {
   return (
-    <section>
+    <section className='py-10 px-40 flex flex-col gap-10'>
         <Navbar />
         <Routing />
         <Footer />

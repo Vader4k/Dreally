@@ -1,3 +1,6 @@
+// logo
+import logo from './logo.png'
+
 // hero section images
 import first from './Ellipse 1.png'
 import second from './Ellipse 2.png'
@@ -24,6 +27,7 @@ import tiktok from './tiktok.png'
 import youtube from './youtube.png'
 
 export {
+    logo,
     first,
     second,
     third,
