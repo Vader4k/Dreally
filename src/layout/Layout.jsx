@@ -1,8 +1,13 @@
-
+import Routing from '../routes/Routing'
+import { Navbar, Footer } from '../components'
 
 const Layout = () => {
   return (
-    <div>Layout</div>
+    <section>
+        <Navbar />
+        <Routing />
+        <Footer />
+    </section>
   )
 }
 
