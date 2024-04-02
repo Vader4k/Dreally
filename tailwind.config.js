@@ -31,6 +31,9 @@ export default {
           '800': '#0a0a0a',
           '900': '#080808',
         }
+      },
+      fontFamily: {
+        Sora: ["Sora", "sans-serif"]
       }
     },
   },

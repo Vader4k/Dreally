@@ -1,6 +1,10 @@
+import { Hero } from '../components'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <section>
+      <Hero />
+    </section>
   )
 }
 

@@ -13,7 +13,7 @@ const Navbar = () => {
               <span 
                 key={nav.id} 
                 className='capitalize text-[1rem] cursor-pointer'>
-                  <NavLink to={nav.path} className='no-underline text-gray-500 flex items-center p-3 hover:bg-gray-300 hover:text-black rounded-md transition-all'>
+                  <NavLink to={nav.path} className='no-underline text-primary-900 flex items-center p-3 hover:bg-gray-300 hover:text-black rounded-md transition-all'>
                     {nav.name}
                   </NavLink>
               </span>
