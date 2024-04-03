@@ -12,3 +12,7 @@
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
+
+.box {
+  border: 1px solid #d0d0ff;
+}

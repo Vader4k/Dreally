@@ -1,9 +1,10 @@
-import { Hero } from '../components'
+import { Hero, Services } from '../components'
 
 const Home = () => {
   return (
-    <section>
+    <section className='flex flex-col gap-20'>
       <Hero />
+      <Services />
     </section>
   )
 }
