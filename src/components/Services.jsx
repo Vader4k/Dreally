@@ -14,15 +14,15 @@ const Services = () => {
   const getImage = () => {
     switch (active) {
       case 1:
-        return <img src="/image1.jpg" alt="Accordion 1 Image" />;
+        return <img className='w-[800px] object-cover' src="https://images.unsplash.com/photo-1554757387-2a28855c78fb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 1 Image" />;
       case 2:
-        return <img src="/image2.jpg" alt="Accordion 2 Image" />;
+        return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1519748771451-a94c596fad67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 2 Image" />;
       case 3:
-        return <img src="/image3.jpg" alt="Accordion 3 Image" />;
+        return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 3 Image" />;
       case 4:
-        return <img src="/image4.jpg" alt="Accordion 4 Image" />;
+        return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 4 Image" />;
       case 5:
-        return <img src="/image5.jpg" alt="Accordion 5 Image" />;
+        return <img className='w-[800px] object-cover'  src="https://plus.unsplash.com/premium_photo-1681830630610-9f26c9729b75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 5 Image" />;
       default:
         return null;
     }
@@ -137,7 +137,7 @@ const Services = () => {
                   { active === 5 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                        TLaunch your website on your own terms with the freedom to go live whenever you{"'"}re ready. Take control of your online presence and make an impact.
+                        Launch your website on your own terms with the freedom to go live whenever you{"'"}re ready. Take control of your online presence and make an impact.
                   </div>) }
               </div>
               </div>
