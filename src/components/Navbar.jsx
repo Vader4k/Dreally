@@ -4,13 +4,13 @@ import { navLinks } from '../constants'
 
 const Navbar = () => {
   return (
-    <section className='w-full'>
-      <nav className='w-full py-4 px-4 bg-primary-50 flex items-center justify-between rounded-[100px]'>
+    <section className='w-full sticky top-20'>
+      <nav className='w-full py-6 px-4 bg-primary-50 flex items-center justify-between rounded-[100px]'>
         <div className='flex items-center gap-10'>
           <img src={logo} alt="logo" className='px-4'/>
           <div className='flex items-center gap-6'>
             {navLinks.map((nav) => (
-              <span 
+              <span  
                 key={nav.id} 
                 className='capitalize text-[1rem] cursor-pointer'>
                   <NavLink to={nav.path} className='no-underline text-primary-900 flex items-center p-3 hover:bg-gray-300 hover:text-black rounded-md transition-all'>
