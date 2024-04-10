@@ -1,9 +1,20 @@
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css/bundle';
+
 import group from '../assets/Group 1.png'
+import { screen1, screen2 } from '../assets'
+import { motion } from "framer-motion"
+
 
 const Hero = () => {
+
+
   return (
-    <section className="w-full flex items-center h-[100vh] justify-between">
-      <div className="flex flex-col gap-5 mb-20 items-start flex-1">
+    <section className="w-full flex items-center h-[90vh] justify-between">
+      <div className="flex flex-col gap-5 items-start w-[50%]">
         <h1 className="font-bold text-[4rem] max-w leading-[4.6rem]">
           Create your website with our all-in-one platform for your brand
         </h1>
@@ -26,8 +37,38 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='flex-1 flex items-center justify-center mb-20'>
-        coming back for this
+      <div className='flex items-center justify-center mb-20 w-[50%] h-fit'>
+        <Swiper
+          className='w-full h-full'
+          modules={[Autoplay, EffectCoverflow]}
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          autoplay={{
+            delay: 5000, // Increase this value to slow down autoplay (e.g., 5 seconds here)
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide className='w-full h-full flex items-center justify-center'>
+            <motion.div
+            >
+              <img className='w-[700px] cursor-pointer' src={screen1} alt="image 1" />
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide className='w-full h-full flex items-center justify-center'>
+           <motion.div
+           >
+              <img className='w-[700px] cursor-pointer' src={screen2} alt="image 2" />
+            </motion.div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   )

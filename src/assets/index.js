@@ -26,6 +26,9 @@ import twitter from './twitter.png'
 import tiktok from './tiktok.png'
 import youtube from './youtube.png'
 
+//hero cartousel images
+import screen1 from './screen1.png'
+import screen2 from './screen2.png'
 export {
     logo,
     first,
@@ -45,4 +48,6 @@ export {
     twitter,
     tiktok,
     youtube,
+    screen1,
+    screen2,
 }
