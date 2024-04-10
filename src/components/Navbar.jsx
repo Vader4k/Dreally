@@ -1,13 +1,15 @@
 import { logo } from '../assets'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { navLinks } from '../constants'
 
 const Navbar = () => {
   return (
-    <section className='w-full sticky top-20'>
+    <section className='w-full sticky top-10'>
       <nav className='w-full py-6 px-4 bg-primary-50 flex items-center justify-between rounded-[100px]'>
-        <div className='flex items-center gap-10'>
-          <img src={logo} alt="logo" className='px-4'/>
+        <div className='flex items-center gap-8'>
+          <Link to='/'>
+            <img src={logo} alt="logo" className='px-4 w-[150px]'/>
+          </Link>
           <div className='flex items-center gap-6'>
             {navLinks.map((nav) => (
               <span  

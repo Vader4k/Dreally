@@ -3,28 +3,18 @@ import { link, security, idea } from '../assets'
 export const navLinks = [
     {
         id: 1,
-        name: 'templates',
-        path: '/'
+        name: 'About',
+        path: '/about'
     },
     {
         id: 2,
-        name: 'marketplace',
-        path: '/'
+        name: 'Marketplace',
+        path: '/marketplace'
     },
     {
         id: 3,
-        name: 'discover',
-        path: '/'
-    },
-    {
-        id: 4,
-        name: 'pricing',
-        path: '/'
-    },
-    {
-        id: 5,
-        name: 'learning',
-        path: '/'
+        name: 'Discover',
+        path: '/discover'
     },
 ]
 

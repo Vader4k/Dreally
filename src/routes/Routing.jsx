@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom"
 import Home from '../pages/Home'
 import Discover from '../pages/Discover'
-import Pricing from '../pages/Pricing'
+import Marketplace from '../pages/Marketplace'
+import About from "../pages/About"
 
 const Routing = () => {
   return (
@@ -9,7 +10,8 @@ const Routing = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/discover" element={<Discover />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </section>
   )

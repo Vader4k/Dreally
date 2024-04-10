@@ -31,22 +31,22 @@ const Services = () => {
 
   return (
     <section className='w-full'>
-      <h1 className='text-center font-bold text-4xl tracking-tighter'>why Dreally?</h1>
-      <div className='my-10 w-full flex items-start justify-around gap-10'>
+      <h1 className='text-center font-bold text-4xl tracking-tighter pb-10'>why Dreally?</h1>
+      <div className='my-10 w-full flex items-start justify-center gap-16'>
         {why.map((data) => (
-          <div key={data.id} className='flex flex-col gap-4 p-4 box bg-primary-50 rounded-2xl'>
+          <div key={data.id} className='flex flex-col gap-4 p-8 box bg-primary-50 rounded-2xl'>
             <img src={data.icon} alt="icons" className='w-[60px] h-[60px] object-cover'/>
             <h1 className='font-semibold text-2xl text-primary-800'>{data.title}</h1>
-            <p className='max-w-[300px] text-primary-800 text-[0.9rem] leading-6'>{data.text}</p>
+            <p className='max-w-[350px] text-primary-800 text-[1.1rem] leading-6'>{data.text}</p>
           </div>
         ))}
       </div>
 
-      <h1 className='text-center font-bold text-4xl pt-20 leading-[50px]'>
+      <h1 className='text-center font-bold text-4xl pt-60 leading-[50px]'>
         A platform that gives you <br /> absolute power over your website
       </h1>
 
-      <div className='w-full flex items-center justify-between my-10'>
+      <div className='w-full flex items-center justify-between py-20'>
           <div className='flex flex-col gap-4'>
             <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>

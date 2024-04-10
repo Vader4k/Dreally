@@ -2,7 +2,7 @@ import { Hero, Services } from '../components'
 
 const Home = () => {
   return (
-    <section className='flex flex-col gap-20'>
+    <section className='flex flex-col'>
       <Hero />
       <Services />
     </section>

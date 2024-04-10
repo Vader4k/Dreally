@@ -2,8 +2,8 @@ import group from '../assets/Group 1.png'
 
 const Hero = () => {
   return (
-    <section className="w-full flex items-center justify-between h-screen ">
-      <div className="flex flex-col gap-5 items-start flex-1">
+    <section className="w-full flex items-center h-[100vh] justify-between">
+      <div className="flex flex-col gap-5 mb-20 items-start flex-1">
         <h1 className="font-bold text-[4rem] max-w leading-[4.6rem]">
           Create your website with our all-in-one platform for your brand
         </h1>
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='flex-1 flex items-center justify-center'>
+      <div className='flex-1 flex items-center justify-center mb-20'>
         coming back for this
       </div>
     </section>
