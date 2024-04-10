@@ -36,7 +36,7 @@ const Services = () => {
       <h1 className='text-center font-bold text-4xl tracking-tighter pb-10'>why Dreally?</h1>
       <div className='my-10 w-full flex items-start justify-center gap-16'>
         {why.map((data) => (
-          <div key={data.id} className='flex flex-col gap-4 px-8 py-6 min-h-[300px] box bg-primary-50 rounded-2xl'>
+          <div key={data.id} className='flex flex-col gap-4 px-8 py-6 min-h-[310px] box bg-primary-50 rounded-2xl'>
             <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover'/>
             <h1 className='font-semibold text-2xl text-primary-800'>{data.title}</h1>
             <p className='max-w-[350px] text-primary-800 text-[1rem] leading-6'>{data.text}</p>
@@ -55,9 +55,9 @@ const Services = () => {
             cursor
             cursorBlinking={true}
             cursorStyle='|'
-            typeSpeed={70}
-            delaySpeed={5000}
-            deleteSpeed={60}
+            typeSpeed={30}
+            delaySpeed={2000}
+            deleteSpeed={30}
           />
         </span> 
       </h1>

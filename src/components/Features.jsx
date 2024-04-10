@@ -1,8 +1,9 @@
+import { features } from "../constants"
 
 const Features = () => {
   return (
-    <section>
-      <h1>All Available Features</h1>
+    <section className="my-20">
+      <h1 className="font-bold text-4xl ">All Available Features</h1>
     </section>
   )
 }

@@ -6,6 +6,7 @@ import Hero from './Hero'
 import Navbar from './Navbar'
 import Services from './Services'
 import Solutions from './Solutions'
+import Accordion from './Accordion'
 
 export {
     FaQs,
@@ -15,5 +16,6 @@ export {
     Hero,
     Navbar,
     Services,
-    Solutions
+    Solutions,
+    Accordion
 }
