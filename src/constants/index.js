@@ -139,8 +139,14 @@ export const features = [
     },
     {
         id:17,
+        title: 'Instagram Feed',
+        text: 'Showcase your latest instagram posts directly on your Dreally account',
+        icon: idea
+    },
+    {
+        id:18,
         title: 'vCard Templates',
         text: 'Choose from a variety of templates to create your digital vCard',
-        icon: idea
+        icon: security
     }
 ]
