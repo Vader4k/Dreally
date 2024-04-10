@@ -22,19 +22,19 @@ export const why = [
     {
         id:1,
         icon: link,
-        title: 'Scalable & Relable',
-        text: 'Grow your business confidently with our scalable and reliable platform, designed to adapt to your needs as you expand'
+        title: 'Portfolio Showcase',
+        text: 'Showcase your skills, projects, and achievements with ease using our customizable portfolio templates. Impress clients and employers with a professional online presence that highlights your expertise and experience.'
     },
     {
         id:2,
         icon: idea,
-        title: 'Advanced Collaboration',
-        text: 'Foster teamwork and innovation with our advanced collaboration features, empowering your team to work together'
+        title: 'Seamless Connections',
+        text: 'Connect with confidence using Dreally seamless networking tools. From click-to-call functionality to instant sharing of contact information, networking has never been easier. Build meaningful connections and grow your network effortlessly with Dreally.'
     },
     {
         id:3,
         icon: security,
-        title: 'Secured & Compliance',
-        text: 'Protect your valuable data and maintain compliance with industry standards using our secured platform.'
+        title: 'Digital Business Cards',
+        text: 'Unlock the power of digital networking with our sleek and professional digital business cards. Stand out from the crowd and make a lasting impression with customizable designs and seamless sharing capabilities.'
     },
 ]

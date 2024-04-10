@@ -1,7 +1,9 @@
 
 const Features = () => {
   return (
-    <div>Features</div>
+    <section>
+      <h1>All Available Features</h1>
+    </section>
   )
 }
 

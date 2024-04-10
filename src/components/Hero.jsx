@@ -14,15 +14,15 @@ const Hero = () => {
     <section className="w-full flex items-center h-[90vh] justify-between">
       <div className="flex flex-col gap-5 items-start w-[50%] mb-20">
         <h1 className="font-bold text-[4rem] max-w leading-[4.6rem]">
-          Create your website with our all-in-one platform for your brand
+          Empower your online presence with Dreally, your all in one platform.
         </h1>
         <p className="leading-6 text-neutral-300 text-[1.13rem] max-w-[600px]">
-          Empower your online presence from customizable design elements to seamless integrations and powerful analytics, unlock endless possibilities to showcase your business.
+          Join the community of professionals taking their online presence to the next level with Dreally. Connect effortlessly, showcase your expertise, and make a lasting impression. Start networking smarter today!
         </p>
         <button 
           className="py-4 my-5 px-24 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
         >
-          Sign Up
+          Sign Up, its free!
         </button>
         <div className='flex items-center gap-4'>
           <div className='flex items-center'>
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           <div className='flex flex-col'>
             <h1 className='font-semibold text-3xl font-Sora'>2000+</h1>
-            <p className='text-neutral-300 font-Sora'>Websites</p>
+            <p className='text-neutral-300 font-Sora'>Portfolios</p>
           </div>
         </div>
       </div>
