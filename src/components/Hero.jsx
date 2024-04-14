@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css/bundle';
 
@@ -46,10 +46,10 @@ const Hero = () => {
           }}
         >
           <SwiperSlide>
-              <img className='w-[700px] cursor-pointer' src={screen1} alt="image 1" />
+              <img className='w-full cursor-pointer' src={screen1} alt="image 1" />
           </SwiperSlide>
           <SwiperSlide>
-              <img className='w-[700px] cursor-pointer' src={screen2} alt="image 2" />
+              <img className='w-full cursor-pointer' src={screen2} alt="image 2" />
           </SwiperSlide>
         </Swiper>
       </div>

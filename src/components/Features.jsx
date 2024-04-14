@@ -1,6 +1,7 @@
 import { features } from "../constants"
 import { Accordion } from '../components'
 
+
 const Features = () => {
   return (
     <section className="my-20">
