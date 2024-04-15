@@ -14,11 +14,16 @@ import link from './link.png'
 import security from './security.png'
 
 // service icons
-import animations from './animations.png'
-import setting from './cutomize.png'
-import tag from './tag.png'
+import charts from './animations.png'
+import chartsClosed from './animationsClosed.png'
+import card from './card.png'
+import cardClosed from './cardClosed.png'
 import customize from './customize.png'
-import live from './live.png'
+import customizeClosed from './customizeClosed.png'
+import share from './share.png'
+import shareClosed from './shareClosed.png'
+import tag from './tag.png'
+import tagClosed from './tagClosed.png'
 
 //footer icons
 import insta from './insta.png'
@@ -39,15 +44,20 @@ export {
     idea,
     link,
     security,
-    animations,
-    setting,
     tag,
     customize,
-    live,
     insta,
     twitter,
     tiktok,
     youtube,
     screen1,
     screen2,
+    charts,
+    chartsClosed,
+    card,
+    cardClosed,
+    customizeClosed,
+    share,
+    shareClosed,
+    tagClosed,
 }

@@ -1,5 +1,5 @@
 import { why } from '../constants'
-import { customize, tag, setting, animations, live } from '../assets'
+import { charts, chartsClosed, card, cardClosed, customize, customizeClosed, share, shareClosed, tag, tagClosed } from '../assets'
 import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -66,18 +66,18 @@ const Services = () => {
           <div className='flex flex-col gap-4'>
             <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={setting} alt="customize icon" className='mt-2'/>
+                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='mt-2'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
                     className='font-semibold text-2xl text-primary-800'
                     onClick={() => handleActiveAccordion(1)}
                   >
-                    Customize your page
+                    Customizable Portfolio showcase
                   </h1>
                   { active === 1 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                    Tailor your page to perfection with our intuitive customization tools, allowing you to personalize every element to suit your brand and vision.
+                      showcase your skills and achievements with customizable portfolio templates
                   </div>) }
               </div>
               </div>
@@ -85,18 +85,18 @@ const Services = () => {
 
             <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={tag} alt="customize icon" className='mt-1'/>
+                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='mt-1'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
                     className='font-semibold text-2xl text-primary-800'
                     onClick={() => handleActiveAccordion(2)}
                   >
-                    Style your page how you want
+                    Seamless Networking Tools
                   </h1>
                   { active === 2 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                      Express your creativity and style with freedom as you design your page exactly as you envision. You have the power to bring your unique aesthetic to life.
+                      Connect effortlessly with click-to-call functionality, instant sharing, and seamless contact management.
                   </div>) }
               </div>
               </div>
@@ -104,18 +104,18 @@ const Services = () => {
 
             <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={animations} alt="customize icon" className='mt-1'/>
+                <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='mt-1'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
                     className='font-semibold text-2xl text-primary-800'
                     onClick={() => handleActiveAccordion(3)}
                   >
-                    Create Animations
+                    Analytics and Insights
                   </h1>
                   { active === 3 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                      Bring your content to life with dynamic animation features, adding flair and interactivity to your page. Unleash your creativity and engage your audience.
+                      Gain valuable insights into your networking activities with built-in analytics tools.
                   </div>) }
               </div>
               </div>
@@ -123,18 +123,18 @@ const Services = () => {
 
             <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={customize} alt="customize icon"/>
+                <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon"/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
                     className='font-semibold text-2xl text-primary-800'
                     onClick={() => handleActiveAccordion(4)}
                   >
-                    Customizable CSS Components
+                    Shareable Dreally Link
                   </h1>
                   { active === 4 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                      Take control of your page{"'"}s design with customizable CSS components, giving you the flexibility to fine-tune every aspect of your website{"'"}s appearance. 
+                      Add your unique dreally Vcard URL to all the platforms and places you find your audience. Then use your Dreally Card to drive your offline traffic online. 
                   </div>) }
               </div>
               </div>
@@ -142,18 +142,18 @@ const Services = () => {
 
             <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={live} alt="customize icon"/>
+                <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon"/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
                     className='font-semibold text-2xl text-primary-800'
                     onClick={() => handleActiveAccordion(5)}
                   >
-                    Go Live at your will
+                    Sleek Digital Business Cards
                   </h1>
                   { active === 5 
                     && 
                     (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
-                        Launch your website on your own terms with the freedom to go live whenever you{"'"}re ready. Take control of your online presence and make an impact.
+                        Stand out with customizable digital business cards that make a lasting impression.
                   </div>) }
               </div>
               </div>
