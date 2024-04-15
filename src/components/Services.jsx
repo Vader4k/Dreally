@@ -1,5 +1,5 @@
 import { why } from '../constants'
-import { charts, chartsClosed, card, cardClosed, customize, customizeClosed, share, shareClosed, tag, tagClosed } from '../assets'
+import { charts, chartsClosed, card, cardClosed, customize, customizeClosed, share, shareClosed, tag, tagClosed, analytics, dreallyCard, customizable } from '../assets'
 import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -15,15 +15,15 @@ const Services = () => {
   const getImage = () => {
     switch (active) {
       case 1:
-        return <img className='w-[800px] object-cover' src="https://images.unsplash.com/photo-1554757387-2a28855c78fb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 1 Image" />;
+        return <img className='w-[800px] object-cover' src={customizable} alt="customizable profile" />;
       case 2:
         return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1519748771451-a94c596fad67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 2 Image" />;
       case 3:
-        return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 3 Image" />;
+        return <img className='w-[800px] object-cover'  src={analytics} alt="Analutics and insight" />;
       case 4:
         return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 4 Image" />;
       case 5:
-        return <img className='w-[800px] object-cover'  src="https://plus.unsplash.com/premium_photo-1681830630610-9f26c9729b75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 5 Image" />;
+        return <img className='w-[800px] object-cover'  src={dreallyCard} alt="dreally business card" />;
       default:
         return null;
     }
@@ -36,8 +36,8 @@ const Services = () => {
       <h1 className='text-center font-bold text-4xl tracking-tighter pb-10'>why Dreally?</h1>
       <div className='my-10 w-full flex items-start justify-center gap-16'>
         {why.map((data) => (
-          <div key={data.id} className='flex flex-col gap-4 px-8 py-6 min-h-[310px] box bg-primary-50 rounded-2xl'>
-            <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover'/>
+          <div key={data.id} className='card flex flex-col gap-4 px-8 py-6 min-h-[310px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
+            <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover '/>
             <h1 className='font-semibold text-2xl text-primary-800'>{data.title}</h1>
             <p className='max-w-[350px] text-primary-800 text-[1rem] leading-6'>{data.text}</p>
           </div>
@@ -66,10 +66,10 @@ const Services = () => {
           <div className='flex flex-col gap-4'>
             <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='mt-2'/>
+                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                    className='font-semibold text-2xl text-primary-800'
+                    className={`font-semibold text-2xl ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(1)}
                   >
                     Customizable Portfolio showcase
@@ -85,10 +85,10 @@ const Services = () => {
 
             <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='mt-1'/>
+                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                    className='font-semibold text-2xl text-primary-800'
+                    className={`font-semibold text-2xl ${active === 2 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(2)}
                   >
                     Seamless Networking Tools
@@ -104,10 +104,10 @@ const Services = () => {
 
             <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='mt-1'/>
+                <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                    className='font-semibold text-2xl text-primary-800'
+                   className={`font-semibold text-2xl ${active === 3 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(3)}
                   >
                     Analytics and Insights
@@ -123,10 +123,10 @@ const Services = () => {
 
             <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon"/>
+                <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon" className='w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                    className='font-semibold text-2xl text-primary-800'
+                   className={`font-semibold text-2xl ${active === 4 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(4)}
                   >
                     Shareable Dreally Link
@@ -142,10 +142,10 @@ const Services = () => {
 
             <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon"/>
+                <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon" className='w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                    className='font-semibold text-2xl text-primary-800'
+                   className={`font-semibold text-2xl ${active === 5 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(5)}
                   >
                     Sleek Digital Business Cards

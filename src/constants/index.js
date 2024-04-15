@@ -1,4 +1,22 @@
-import { link, security, idea } from '../assets'
+import { link, security, idea,
+    affiliate,
+    analist,
+    blog,
+    booking,
+    code,
+    enquiry,
+    gallery,
+    iframe,
+    instagram,
+    ladder,
+    listing,
+    payment,
+    save,
+    seo,
+    service,
+    social,
+    tales,
+    vcard, } from '../assets'
 
 export const navLinks = [
     {
@@ -44,109 +62,109 @@ export const features = [
         id:1,
         title: 'Service Showcases',
         text: 'Highlight your offerings or expertise with dedicated service sections.',
-        icon: link
+        icon: service
     },
     {
         id:2,
         title: 'Testimonial Tales',
         text: 'Showcase client feedback and build trust with testimonials.',
-        icon: idea
+        icon: tales
     },
     {
         id:3,
         title: 'Analytics',
         text: 'Gain insights into your accounts performance with built-in analytics tools.',
-        icon: security
+        icon: analist
     },
     {
         id:4,
         title: 'Enquiry Form',
         text: 'Capture leads and inquiries easily with customizable enquiry forms',
-        icon: link
+        icon: enquiry
     },
     {
         id:5,
         title: 'Social Links',
         text: 'Add links to your website and other social media profiles',
-        icon: idea
+        icon: social
     },
     {
         id:6,
         title: 'IFrame',
         text: 'Embed external content seamlessly with customizable iframe options',
-        icon: security
+        icon: iframe
 
     },
     {
         id:7,
         title: 'SEO Sage',
         text: 'Optimze your account for search engines to improve visibility and reach',
-        icon: link
+        icon: seo
     },
     {
         id:8,
         title: 'Click to save contact',
         text: 'Allow visitors to save your contact information with a single click, making it effortless for them to connect and stay in touch',
-        icon: idea
+        icon: save
     },
     {
         id: 9,
         title: 'Blog Beacon',
         text: 'Share your thoughts and expertise with a built-in blogging platform',
-        icon: security
+        icon: blog
     },
     {
         id: 10,
         title: 'Appointment Booking',
         text: 'Schedule apointments and manage bookings effortlessly',
-        icon: link
+        icon: booking
     },
     {
         id:11,
         title: 'Affiliate Amalgamator',
         text: 'Partner with other brands or businesses through affiliate marketing',
-        icon: idea
+        icon: affiliate
     },
     {
         id:12,
         title: 'Gallery Glimpse',
         text: 'Display images and visuals beautifully with customizable gallery options',
-        icon: security
+        icon: gallery
     },
     {
         id:13,
         title: 'Product Listing',
         text: 'Showcase and sell your products directly from your Dreally account',
-        icon: link
+        icon: listing
     },
     {
         id:14,
-        title: 'Enquiry Engine',
+        title: 'Payment Setup',
         text: 'Capture leads and inquiries easily with customizable enquiry forms',
-        icon: idea
+        icon: payment
     },
     {
         id:15,
-        title: 'Advanced Fonts',
+        title: 'Link Ladder',
         text: 'Customize your account with advanced font options',
-        icon: security
+        icon: ladder
     },
     {
         id:16,
         title: 'Customize QR Code',
         text: 'Generate custom QR code to promote your Dreally account',
-        icon: link
+        icon: code
     },
     {
         id:17,
         title: 'Instagram Feed',
         text: 'Showcase your latest instagram posts directly on your Dreally account',
-        icon: idea
+        icon: instagram
     },
     {
         id:18,
         title: 'vCard Templates',
         text: 'Choose from a variety of templates to create your digital vCard',
-        icon: security
+        icon: vcard
     }
 ]

@@ -1,12 +1,6 @@
 // logo
 import logo from './logo.png'
 
-// hero section images
-import first from './Ellipse 1.png'
-import second from './Ellipse 2.png'
-import third from './Ellipse 3.png'
-import fourth from './Ellipse 4.png'
-import fifth from './Ellipse 5.png'
 
 // why dreally icons
 import idea from './idea.png'
@@ -34,13 +28,35 @@ import youtube from './youtube.png'
 //hero cartousel images
 import screen1 from './screen1.png'
 import screen2 from './screen2.png'
+
+
+//images for why dreally
+import customizable from './customizable.png'
+import dreallyCard from './dreallyCard.png'
+import analytics from './analytics.png'
+
+//icons for all avilable features
+import affiliate from './affiliate.png'
+import analist from './analist.png'
+import blog from './blog.png'
+import booking from './booking.png'
+import code from './code.png'
+import enquiry from './enquiry.png'
+import gallery from './gallery.png'
+import iframe from './iframe.png'
+import instagram from './instagram.png'
+import ladder from './ladder.png'
+import listing from './listing.png'
+import payment from './payment.png'
+import save from './save.png'
+import seo from './seo.png'
+import service from './service.png'
+import social from './social.png'
+import tales from './tales.png'
+import vcard from './vcard.png'
+
 export {
     logo,
-    first,
-    second,
-    third,
-    fourth,
-    fifth,
     idea,
     link,
     security,
@@ -60,4 +76,25 @@ export {
     share,
     shareClosed,
     tagClosed,
+    customizable,
+    dreallyCard,
+    analytics,
+    affiliate,
+    analist,
+    blog,
+    booking,
+    code,
+    enquiry,
+    gallery,
+    iframe,
+    instagram,
+    ladder,
+    listing,
+    payment,
+    save,
+    seo,
+    service,
+    social,
+    tales,
+    vcard,
 }
