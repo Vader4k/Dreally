@@ -8,6 +8,7 @@ import Services from './Services'
 import Solutions from './Solutions'
 import Accordion from './Accordion'
 import Info from './Info'
+import Slider from './Slider'
 
 export {
     FaQs,
@@ -19,5 +20,6 @@ export {
     Services,
     Solutions,
     Accordion,
-    Info
+    Info,
+    Slider
 }

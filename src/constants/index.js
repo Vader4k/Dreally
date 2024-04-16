@@ -168,3 +168,93 @@ export const features = [
         icon: vcard
     }
 ]
+
+export const started = [
+    {
+        id:1,
+        title: 'How to start creating my portfolio? ',
+        text : [
+            {
+                id:1,
+                text: 'Sign up and verify your Dreally account'
+            },
+            {
+                id:2,
+                text: 'Navigate to the Vcards section in your dashboard.'
+            },
+            {
+                id:3,
+                text: 'Click "Add New Vcard" and enter your desired URL name.'
+            },
+            {
+                id:4,
+                text: 'Complete your profile information.'
+            },
+            {
+                id:5,
+                text: 'Choose a Vcard template that suits your style.'
+            },
+            {
+                id:6,
+                text: ' Preview your Vcard and publish your portfolio.'
+            }
+        ]
+    }
+    ,
+    {
+        id:2,
+        title: 'How to get your smart card for your link ',
+        text : [
+            {
+                id:1,
+                text: 'Go to your dashboard menu and click on "My NFC Card".'
+            },
+            {
+                id:2,
+                text: 'Choose "Order NFC" from the options'
+            },
+            {
+                id:3,
+                text: 'Click on the card image to select your desired NFC Card Type.'                
+            },
+            {
+                id:4,
+                text: 'From your link list, select a VCard Name.'
+            },
+            {
+                id:5,
+                text: ' Upload your logo to personalize your card.'
+            },
+            {
+                id:6,
+                text: 'Complete your order by clicking "Order" and proceed with payment to process your card'
+            }
+        ] 
+    },
+    {
+        id:3,
+        title: 'How to activate you payment gateway',
+        text : [
+            {
+                id:1,
+                text: 'Navigate to your settings.'
+            },
+            {
+                id:2,
+                text: 'Activate your preferred Payment Gateway.'
+            },
+            {
+                id:3,
+                text: ' Input your Merchant Key and Secret Key.'              
+            },
+            {
+                id:4,
+                text: 'Save your settings.'
+            },
+            {
+                id:5,
+                text: 'Begin selling on Dreally.'
+            },
+        ] 
+    }
+]
