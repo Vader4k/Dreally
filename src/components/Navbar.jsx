@@ -5,7 +5,7 @@ import { navLinks } from '../constants'
 const Navbar = () => {
   return (
     <section className='w-full sticky top-10 z-50'>
-      <nav className='w-full py-6 px-4 bg-primary-50 flex items-center justify-between rounded-[100px] shadow-md'>
+      <nav className='w-full py-4 px-4 bg-primary-50 flex items-center justify-between rounded-[100px]'>
         <div className='flex items-center gap-8'>
           <Link to='/'>
             <img src={logo} alt="logo" className='px-4 w-[150px]'/>

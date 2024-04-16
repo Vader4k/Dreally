@@ -258,3 +258,36 @@ export const started = [
         ] 
     }
 ]
+
+export const questions = [
+    {
+        id: 1,
+        title: 'What is Dreally and how does it work?',
+        reply: "Dreally is a comprehensive networking platform that allows users to create digital business cards, showcase their portfolios, and connect with others seamlessly. Users can customize their profiles, share contact information, and network effortlessly using Dreally's intuitive interface."
+    },
+    {
+        id: 2,
+        title: 'Can I use Dreally for personal and business purposes?',
+        reply: "Yes, Dreally is designed to cater to both personal and business needs. Whether you're an individual looking to showcase your talents or a business owner seeking to expand your network, Dreally offers features and functionalities to suit your requirements."
+    },
+    {
+        id: 3,
+        title: 'How secure is my information on Dreally?',
+        reply: "At Dreally, we prioritize the security and privacy of our users' information. We employ robust security measures to protect your data and ensure confidentiality. Additionally, users have control over their privacy settings and can choose what information to share and with whom."
+    },
+    {
+        id: 4,
+        title: 'Can I sell products on Dreally ?',
+        reply: "Yes, Dreally offers a platform for users to showcase and sell their products or services directly from their profiles. Whether you're an artist, freelancer, or entrepreneur, you can leverage Dreally's e-commerce capabilities to reach potential customers and grow your business. Simply set up your products, add pricing and descriptions, and start selling hassle-free on Dreally."
+    },
+    {
+        id: 5,
+        title: "What are the benefits of using Dreally's digital business cards?",
+        reply: "Dreally's digital business cards offer several advantages over traditional paper cards. They are eco-friendly, easily shareable via email or social media, customizable to reflect your branding, and provide analytics insights into engagement. Plus, they eliminate the need for printing and carrying physical cards"
+    },
+    {
+        id: 6,
+        title: "How can I get started with Dreally?",
+        reply: "Getting started with Dreally is simple! Sign up for an account, customize your profile and digital business card, showcase your portfolio, and start connecting with others. Our intuitive interface and user-friendly features make it easy for you to elevate your networking game with Dreally."
+    }
+]

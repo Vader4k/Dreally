@@ -1,4 +1,4 @@
-import { Features, Hero, Services, Slider, GetStarted } from '../components'
+import { Features, Hero, Services, Slider, GetStarted, FaQs } from '../components'
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Features />
       <Slider />
       <GetStarted />
+      <FaQs />
     </section>
   )
 }
