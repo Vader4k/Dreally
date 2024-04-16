@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='flex items-center justify-center mb-20 w-[50%] h-fit'>
+      <div className='mb-20 w-[50%] h-fit'>
         <Swiper
           className='w-full h-full'
           modules={[Autoplay ]}

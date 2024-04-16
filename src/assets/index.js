@@ -35,6 +35,7 @@ import customizable from './customizable.png'
 import dreallyCard from './dreallyCard.png'
 import analytics from './analytics.png'
 import seamless from './seamless.png'
+import sharable from './shearable.png'
 
 //icons for all avilable features
 import affiliate from './affiliate.png'
@@ -98,5 +99,6 @@ export {
     social,
     tales,
     vcard,
-    seamless
+    seamless,
+    sharable
 }

@@ -1,7 +1,8 @@
 import { why } from '../constants'
-import { charts, chartsClosed, card, cardClosed, customize, customizeClosed, share, shareClosed, tag, tagClosed, analytics, dreallyCard, customizable, seamless } from '../assets'
+import { charts, sharable, chartsClosed, card, cardClosed, customize, customizeClosed, share, shareClosed, tag, tagClosed, analytics, dreallyCard, customizable, seamless } from '../assets'
 import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import Info from './Info'
 
 const Services = () => {
 
@@ -21,7 +22,7 @@ const Services = () => {
       case 3:
         return <img className='w-[800px] object-cover'  src={analytics} alt="Analutics and insight" />;
       case 4:
-        return <img className='w-[800px] object-cover'  src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accordion 4 Image" />;
+        return <img className='w-[800px] object-cover'  src={sharable} alt="sharable profile links" />;
       case 5:
         return <img className='w-[800px] object-cover'  src={dreallyCard} alt="dreally business card" />;
       default:
@@ -43,6 +44,8 @@ const Services = () => {
           </div>
         ))}
       </div>
+
+      <Info />
 
       <h1 className='text-center font-bold text-4xl mt-40 leading-[50px]'>
         A platform that helps you 
