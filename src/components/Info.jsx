@@ -10,7 +10,7 @@ const Info = () => {
     <section className='w-full flex items-center justify-evenly gap-14 pt-28 py-10 px-20'>
         <div className='w-full p-5 flex items-center justify-center overflow-hidden'>
             <Swiper
-                className='w-full bg-black'
+                className='w-full bg-neutral-100 relative rounded-3xl overflow-hidden'
                 modules={[Autoplay ]}
                 grabCursor={true}
                 autoplay={{
@@ -19,10 +19,10 @@ const Info = () => {
                 }}
                 >
                 <SwiperSlide>
-                    <img className='cursor-pointer w-[600px] rounded-xl' src={img1} alt="image 1" />
+                    <img className='cursor-pointer w-[600px]' src={img1} alt="image 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='cursor-pointer w-[600px] rounded-xl' src={img2} alt="image 2" />
+                    <img className='cursor-pointer w-[600px]' src={img2} alt="image 2" />
                 </SwiperSlide>
             </Swiper>
         </div>
