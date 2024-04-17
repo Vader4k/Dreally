@@ -10,7 +10,7 @@ const Info = () => {
     <section className='w-full flex items-center justify-evenly gap-14 pt-28 py-10 px-20'>
         <div className='w-full p-5 flex items-center justify-center overflow-hidden'>
             <Swiper
-                className='w-full'
+                className='w-full bg-black'
                 modules={[Autoplay ]}
                 grabCursor={true}
                 autoplay={{

@@ -34,6 +34,9 @@ export default {
       },
       fontFamily: {
         Sora: ["Sora", "sans-serif"]
+      },
+      backgroundImage: {
+        'vector': "url('./assets/vector.png')",
       }
     },
   },

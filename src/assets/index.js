@@ -24,6 +24,7 @@ import insta from './insta.png'
 import twitter from './twitter.png'
 import tiktok from './tiktok.png'
 import youtube from './youtube.png'
+import dreally from './dreally.png'
 
 //hero cartousel images
 import screen1 from './screen1.png'
@@ -100,5 +101,6 @@ export {
     tales,
     vcard,
     seamless,
-    sharable
+    sharable,
+    dreally
 }
