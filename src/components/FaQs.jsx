@@ -26,7 +26,7 @@ const FaQs = () => {
               className="w-full flex items-center justify-between"
               onClick={() => handleClick(item.id)} // Pass ID to handleClick
             >
-              <h1 className="text-[1.4rem] font-extrabold">{item.title}</h1>
+              <h1 className="text-[1.5rem] font-bold">{item.title}</h1>
               <img 
                 src={active === item.id ? down : up} 
                 alt="arrow" 
@@ -34,7 +34,7 @@ const FaQs = () => {
               /> {/* Toggle arrow based on active */}
             </div>
             {active === item.id && ( // Conditionally render content based on active state
-              <div className="px-5 text-[1rem] max-w-[800px] leading-6 text-neutral-300">
+              <div className="text-[1rem] max-w-[800px] leading-7 text-neutral-300">
                 {item.reply}
               </div>
             )}
