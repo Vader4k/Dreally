@@ -10,7 +10,7 @@ const Info = () => {
     <section className='w-full flex items-center justify-evenly gap-14 pt-28 py-10 px-20'>
         <div className='w-full p-5 flex items-center justify-center overflow-hidden'>
             <Swiper
-                className='w-full bg-neutral-100 relative rounded-3xl overflow-hidden'
+                className='w-full rounded-3xl overflow-hidden'
                 modules={[Autoplay ]}
                 grabCursor={true}
                 autoplay={{
@@ -29,7 +29,7 @@ const Info = () => {
 
         <div className='w-full p-5'>
             <h1 className='font-extrabold text-[3rem]'>
-                Craft and personalize your Dreally profile in mere minutes
+                Craft and personalize your Dreally profile in minutes
             </h1>
             <p className='text-neutral-300 leading-6 py-4'>
                 Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking

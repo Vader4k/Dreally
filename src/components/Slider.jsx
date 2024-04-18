@@ -1,9 +1,8 @@
-/* eslint-disable react/no-unknown-property */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css/bundle';
-
+import Carousel from './Carousel';
 
 const Slider = () => {
 
@@ -49,9 +48,10 @@ const Slider = () => {
         </span></h1>
       </div>
 
-      <div className='w-full my-20'>
-          
+      <div className='w-full my-10'>
+        <Carousel />
       </div>
+
     </section>
   )
 }

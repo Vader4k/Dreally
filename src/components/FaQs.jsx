@@ -12,7 +12,7 @@ const FaQs = () => {
   }
 
   return (
-    <section className="w-full flex items-center justify-center py-48">
+    <section className="w-full flex items-center justify-center py-48 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
       <div className="flex flex-col gap-5">
         <div className="text-center">
           <h1 className="text-[2rem] font-extrabold">Frequently Asked Questions</h1>

@@ -24,3 +24,43 @@
   border-bottom: 1px solid lightgray;
 }
 
+
+.images {
+  display: flex;
+  animation:  swipe 80000ms linear infinite;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-wraper {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.wraper {
+  display: flex;
+}
+
+.banner-wraper:hover .wraper .images {
+  animation-play-state: paused;
+}
+
+.holder:hover img {
+  opacity: 0.1;
+}
+
+.holder:hover span {
+  display: block;
+}
+ 
+.hov_txt {
+  transform: translate(-50%, -50%)
+}

@@ -33,7 +33,7 @@ const Services = () => {
 
 
   return (
-    <section className='w-full'>
+    <section className='w-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
       <h1 className='text-center font-bold text-4xl tracking-tighter pb-10'>why Dreally?</h1>
       <div className='my-10 w-full flex items-start justify-center gap-16'>
         {why.map((data) => (

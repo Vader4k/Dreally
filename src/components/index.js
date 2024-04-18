@@ -9,6 +9,7 @@ import Solutions from './Solutions'
 import Accordion from './Accordion'
 import Info from './Info'
 import Slider from './Slider'
+import Carousel from './Carousel'
 
 export {
     FaQs,
@@ -21,5 +22,6 @@ export {
     Solutions,
     Accordion,
     Info,
-    Slider
+    Slider,
+    Carousel
 }

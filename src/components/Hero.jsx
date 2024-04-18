@@ -11,7 +11,7 @@ const Hero = () => {
 
 
   return (
-    <section className="w-full flex items-center h-[90vh] justify-between">
+    <section className="w-full flex items-center h-[90vh] justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
       <div className="flex flex-col gap-5 items-start w-[50%] mb-20">
         <h1 className="font-bold text-[4rem] max-w leading-[4.6rem]">
           Empower your online presence with Dreally, your all in one platform.
