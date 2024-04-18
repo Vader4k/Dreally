@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
@@ -7,8 +8,8 @@ import 'swiper/css/bundle';
 const Slider = () => {
 
   return (
-    <section className='w-full'>
-      <div className='w-full flex'>
+    <section className='w-full my-20'>
+      <div className='w-full text-center flex items-center justify-center'>
         <h1 className='font-extrabold text-[2.5rem] max-w-[650px]'>The Best Modern Networking Solution For <span className=''>
           <Swiper
               className='h-[100px] text-primary-400'
@@ -46,6 +47,10 @@ const Slider = () => {
                 </SwiperSlide>
             </Swiper>
         </span></h1>
+      </div>
+
+      <div className='w-full my-20'>
+          
       </div>
     </section>
   )
