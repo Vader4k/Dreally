@@ -68,6 +68,9 @@ import slide6 from './slide6.png'
 import slide7 from './slide7.png'
 import slide8 from './slide8.png'
 
+//image for about page
+import aboutbg from './aboutbg.png'
+
 export {
     logo,
     idea,
@@ -121,4 +124,5 @@ export {
     slide6,
     slide7,
     slide8,
+    aboutbg
 }
