@@ -49,9 +49,9 @@
   display: flex;
 }
 
-.banner-wraper:hover .wraper .images {
+/* .banner-wraper:hover .wraper .images {
   animation-play-state: paused;
-}
+} */
 
 .holder:hover img {
   opacity: 0.1;
@@ -64,3 +64,4 @@
 .hov_txt {
   transform: translate(-50%, -50%)
 }
+

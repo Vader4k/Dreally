@@ -1,6 +1,9 @@
 // logo
 import logo from './logo.png'
 
+//navbar icons
+import open from './open.png'
+import closed from './closed.png'
 
 // why dreally icons
 import idea from './idea.png'
@@ -73,6 +76,8 @@ import aboutbg from './aboutbg.png'
 
 export {
     logo,
+    open,
+    closed,
     idea,
     link,
     security,
