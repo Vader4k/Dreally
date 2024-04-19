@@ -16,15 +16,15 @@ const Services = () => {
   const getImage = () => {
     switch (active) {
       case 1:
-        return <img className='w-[800px] object-cover' src={customizable} alt="customizable profile" />;
+        return <img className='max-w-[800px] w-full object-cover' src={customizable} alt="customizable profile" />;
       case 2:
-        return <img className='w-[800px] object-cover'  src={seamless} alt="seamless connection" />;
+        return <img className='max-w-[800px] w-full object-cover'  src={seamless} alt="seamless connection" />;
       case 3:
-        return <img className='w-[800px] object-cover'  src={analytics} alt="Analutics and insight" />;
+        return <img className='max-w-[800px] w-full object-cover'  src={analytics} alt="Analutics and insight" />;
       case 4:
-        return <img className='w-[800px] object-cover'  src={sharable} alt="sharable profile links" />;
+        return <img className='max-w-[800px] w-full object-cover'  src={sharable} alt="sharable profile links" />;
       case 5:
-        return <img className='w-[800px] object-cover'  src={dreallyCard} alt="dreally business card" />;
+        return <img className='max-w-[800px] w-full object-cover'  src={dreallyCard} alt="dreally business card" />;
       default:
         return null;
     }
@@ -47,7 +47,7 @@ const Services = () => {
 
       <Info />
 
-      <h1 className='text-center font-bold text-4xl mt-40 leading-[50px]'>
+      <h1 className='text-center font-bold text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
         A platform that helps you 
         <br /> 
        {" "}
@@ -65,14 +65,14 @@ const Services = () => {
         </span> 
       </h1>
 
-      <div className='w-full flex items-center justify-between py-20'>
-          <div className='flex flex-col gap-4'>
+      <div className='w-full flex flex-wrap gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
+          <div className='flex flex-col gap-4 w-full'>
             <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[30px] transition-all'/>
+                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] transition-all'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
                   <h1 
-                    className={`font-semibold text-2xl transition-all ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
+                    className={`font-semibold text-xl md:text-2xl transition-all ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(1)}
                   >
                     Customizable Portfolio showcase
@@ -88,10 +88,10 @@ const Services = () => {
 
             <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[30px] transition-all'/>
+                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px]  transition-all'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
                   <h1 
-                    className={`font-semibold text-2xl ${active === 2 ? 'text-primary-800' : 'text-neutral-100'} transition-all`}
+                    className={`font-semibold text-xl md:text-2xl ${active === 2 ? 'text-primary-800' : 'text-neutral-100'} transition-all`}
                     onClick={() => handleActiveAccordion(2)}
                   >
                     Seamless Networking Tools
@@ -107,10 +107,10 @@ const Services = () => {
 
             <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='w-[30px]'/>
+                <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                   className={`font-semibold text-2xl ${active === 3 ? 'text-primary-800' : 'text-neutral-100'}`}
+                   className={`font-semibold text-xl md:text-2xl ${active === 3 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(3)}
                   >
                     Analytics and Insights
@@ -126,10 +126,10 @@ const Services = () => {
 
             <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon" className='w-[30px]'/>
+                <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                   className={`font-semibold text-2xl ${active === 4 ? 'text-primary-800' : 'text-neutral-100'}`}
+                   className={`font-semibold text-xl md:text-2xl ${active === 4 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(4)}
                   >
                     Shareable Dreally Link
@@ -145,10 +145,10 @@ const Services = () => {
 
             <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon" className='w-[30px]'/>
+                <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
                   <h1 
-                   className={`font-semibold text-2xl ${active === 5 ? 'text-primary-800' : 'text-neutral-100'}`}
+                   className={`font-semibold text-xl md:text-2xl ${active === 5 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(5)}
                   >
                     Sleek Digital Business Cards
@@ -164,7 +164,7 @@ const Services = () => {
 
           </div>
 
-        <div>{getImage()}</div>
+          <div className='w-full'>{getImage()}</div>
       </div>
     </section>
   )
