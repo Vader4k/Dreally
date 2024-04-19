@@ -9,9 +9,9 @@ const Slider = () => {
   return (
     <section className='w-full my-20'>
       <div className='w-full text-center flex items-center justify-center'>
-        <h1 className='font-extrabold text-[2.5rem] max-w-[650px]'>The Best Modern Networking Solution For <span className=''>
+        <h1 className='font-extrabold text-[2rem] md:text-[2.5rem] max-w-[650px]'>The Best Modern Networking Solution For <span>
           <Swiper
-              className='h-[100px] text-primary-400'
+              className='h-[100px] my-6 text-primary-400'
               modules={[Autoplay ]}
               grabCursor={true}
               direction='vertical'

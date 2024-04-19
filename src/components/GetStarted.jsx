@@ -14,9 +14,9 @@ const GetStarted = () => {
   let counter = 1
 
   return (
-    <section className="w-full flex items-start justify-between gap-20 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
+    <section className="w-full flex flex-wrap items-start justify-between gap-10 md:gap-20 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
       <div className="flex flex-col gap-5 w-full">
-        <h1 className="font-extrabold text-[3rem] max-w-[700px]">Learn how to get started with Dreally</h1>
+        <h1 className="font-extrabold text-[2rem] md:text-[3rem] max-w-[700px]">Learn how to get started with Dreally</h1>
         <p className="text-neutral-300 leading-6 max-w-[500px]">
           Discover the essentials of Dreally and embark on your journey to success with confidence and ease.
         </p>
@@ -29,7 +29,7 @@ const GetStarted = () => {
               className="w-full flex items-center justify-between"
               onClick={() => handleClick(item.id)} // Pass ID to handleClick
             >
-              <h1 className="text-[1.4rem] font-extrabold">{item.title}</h1>
+              <h1 className=" text-[1.2rem] md:text-[1.4rem] font-extrabold">{item.title}</h1>
               <img 
                 src={active === item.id ? down : up} 
                 alt="arrow" 
