@@ -12,7 +12,7 @@ const FaQs = () => {
   }
 
   return (
-    <section className="w-full flex items-center justify-center py-48 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
+    <section className="w-full flex items-center justify-center py-20 lg:py-48 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
       <div className="flex flex-col gap-5">
         <div className="text-center">
           <h1 className="text-[2rem] font-extrabold">Frequently Asked Questions</h1>
@@ -26,7 +26,7 @@ const FaQs = () => {
               className="w-full flex items-center justify-between"
               onClick={() => handleClick(item.id)} // Pass ID to handleClick
             >
-              <h1 className="text-[1.5rem] font-bold">{item.title}</h1>
+              <h1 className="text-[1.2rem] lg:text-[1.5rem] font-bold">{item.title}</h1>
               <img 
                 src={active === item.id ? down : up} 
                 alt="arrow" 
