@@ -7,7 +7,7 @@ const AccordionItem = ({ title, icon, text }) => {
     const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <div className="w-full lg:min-w-[500px] bg-primary-50 p-6 text-center rounded-[15px] flex  flex-col items-start box">
+    <div className="w-full max-w-[500px] bg-primary-50 p-6 text-center rounded-[15px] flex  flex-col items-start box">
         <button
         onClick={toggle}
         className="w-full flex items-center justify-between bg-primary-50 border-none cursor-pointer"

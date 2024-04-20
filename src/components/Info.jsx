@@ -27,7 +27,7 @@ const Info = () => {
             </Swiper>
         </div>
 
-        <div className='w-full p-5 '>
+        <div className='w-full py-5 '>
             <h1 className='font-extrabold text-[2rem] lg:text-[3rem]'>
                 Craft and personalize your Dreally profile in minutes
             </h1>

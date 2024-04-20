@@ -66,7 +66,7 @@ const Services = () => {
       </h1>
 
       <div className='w-full flex flex-wrap gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
-          <div className='flex flex-col gap-4 w-full'>
+          <div className='flex flex-col gap-4'>
             <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] transition-all'/>
@@ -164,7 +164,7 @@ const Services = () => {
 
           </div>
 
-          <div className='w-full'>{getImage()}</div>
+          <div className=''>{getImage()}</div>
       </div>
     </section>
   )

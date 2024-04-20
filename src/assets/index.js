@@ -4,6 +4,7 @@ import logo from './logo.png'
 //navbar icons
 import open from './open.png'
 import closed from './closed.png'
+import play from './play.png'
 
 // why dreally icons
 import idea from './idea.png'
@@ -79,6 +80,7 @@ export {
     open,
     closed,
     idea,
+    play,
     link,
     security,
     tag,

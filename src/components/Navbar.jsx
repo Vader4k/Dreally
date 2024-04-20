@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <section className='w-full sticky top-5 lg:top-10 z-50 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
-      <nav className='w-full relative  py-6 lg:py-6 lg:px-8 px-6 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
+      <nav className='w-full relative  py-4 px-6 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
         <div className='flex items-center gap-8'>
           <Link to='/'>
             <img src={logo} alt="logo" className='px-4 w-[150px]'/>
