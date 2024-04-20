@@ -16,7 +16,16 @@ import { link, security, idea,
     service,
     social,
     tales,
-    vcard, } from '../assets'
+    vcard,
+    insta,
+    tiktok, 
+    twitter, 
+    dreally,
+    freeCheck,
+    freeDisabled,
+    paid
+
+ } from '../assets'
 
 export const navLinks = [
     {
@@ -289,5 +298,288 @@ export const questions = [
         id: 6,
         title: "How can I get started with Dreally?",
         reply: "Getting started with Dreally is simple! Sign up for an account, customize your profile and digital business card, showcase your portfolio, and start connecting with others. Our intuitive interface and user-friendly features make it easy for you to elevate your networking game with Dreally."
+    }
+]
+
+export const footerLinks = [
+    {
+        id:1,
+        name: 'Templates',
+        url: '/'
+    },
+    {
+        id:2,
+        name: 'Pricing',
+        url: '/pricing'
+    },
+    {
+        id:3,
+        name: 'About',
+        url: '/about'
+    },
+
+]
+
+export const socials = [
+    {
+        id:1,
+        img: dreally ,
+        url: 'https://app.dreally.com/Dreally'
+    },
+    {
+        id:2,
+        img: insta,
+        url: 'https://www.instagram.com/getdreally?igsh=dTdrZWc4eGJnMGg0'
+    },
+    {
+        id:3,
+        img: twitter,
+        url: 'http://X.com/getdreally'
+    },
+    {
+        id:4,
+        img: tiktok,
+        url: 'https://www.tiktok.com/@thrive7group?_t=8ldPSIPYamM&_r=1'
+    },
+
+]
+
+export const freeDefault = [
+    {
+        id:1,
+        img: freeCheck,
+        text: 'Up to 2 vCards Links'
+    },
+    {
+        id:2,
+        img: freeCheck,
+        text: 'Services Showcase'
+    },
+    {
+        id:3,
+        img: freeCheck,
+        text: 'Testimonials'
+    },
+    {
+        id:4,
+        img: freeCheck,
+        text: 'Analytics'
+    },
+    {
+        id:5,
+        img: freeCheck,
+        text: 'Gallery'
+    },
+    {
+        id:6,
+        img: freeCheck,
+        text: 'Social Links'
+    },
+    {
+        id:7,
+        img: freeCheck,
+        text: 'Enquiry Form'
+    },
+    {
+        id:8,
+        img: freeCheck,
+        text: 'Custom Fonts'
+    },
+
+]
+
+export const freeExtended = [
+    {
+        id:1,
+        img: freeCheck,
+        text: 'Up to 2 vCards Links'
+    },
+    {
+        id:2,
+        img: freeCheck,
+        text: 'Services Showcase'
+    },
+    {
+        id:3,
+        img: freeCheck,
+        text: 'Testimonials'
+    },
+    {
+        id:4,
+        img: freeCheck,
+        text: 'Analytics'
+    },
+    {
+        id:5,
+        img: freeCheck,
+        text: 'Gallery'
+    },
+    {
+        id:6,
+        img: freeCheck,
+        text: 'Social Links'
+    },
+    {
+        id:7,
+        img: freeCheck,
+        text: 'Enquiry Form'
+    },
+    {
+        id:8,
+        img: freeCheck,
+        text: 'Custom Fonts'
+    },
+    {
+        id:9,
+        img: freeDisabled,
+        text: 'Products Listing'
+    },
+    {
+        id:10,
+        img: freeDisabled,
+        text: 'Appointment Booking'
+    },
+    {
+        id:11,
+        img: freeDisabled,
+        text: 'iFrame integration'
+    },
+    {
+        id:12,
+        img: freeDisabled,
+        text: 'Instagram Feeds Integration'
+    },
+    {
+        id:13,
+        img: freeDisabled,
+        text: 'Blog'
+    },
+    {
+        id:14,
+        img: freeDisabled,
+        text: 'Custom QR Code'
+    },
+    {
+        id:15,
+        img: freeDisabled,
+        text: 'Custom JS'
+    },
+    {
+        id:17,
+        img: freeDisabled,
+        text: 'Custom Css'
+    },
+    {
+        id:17,
+        img: freeDisabled,
+        text: 'Password Protection'
+    },
+    {
+        id:18,
+        img: freeDisabled,
+        text: 'Affiliation'
+    },
+    {
+        id:19,
+        img: freeDisabled,
+        text: 'SEO'
+    },
+    {
+        id:20,
+        img: freeDisabled,
+        text: 'Payment Set Up'
+    },
+    {
+        id:21,
+        img: freeDisabled,
+        text: 'And Many more'
+    },
+
+]
+
+export const paidDefault = [
+    {
+        id:1,
+        img: paid,
+        text: 'Up to 15 vCards Links'
+    },
+    {
+        id:2,
+        img: paid,
+        text: 'Services Showcase'
+    },
+    {
+        id:3,
+        img: paid,
+        text: 'Testimonials'
+    },
+    {
+        id:4,
+        img: paid,
+        text: 'Analytics'
+    },
+    {
+        id:5,
+        img: paid,
+        text: 'Gallery'
+    },
+    {
+        id:6,
+        img: paid,
+        text: 'Social Links'
+    },
+    {
+        id:7,
+        img: paid,
+        text: 'Enquiry Form'
+    },
+    {
+        id:8,
+        img: paid,
+        text: 'Products Listing'
+    }
+
+]
+
+export const paidExtended = [
+    {
+        id:1,
+        img: paid,
+        text: 'Up to 15 vCards Links'
+    },
+    {
+        id:2,
+        img: paid,
+        text: 'Services Showcase'
+    },
+    {
+        id:3,
+        img: paid,
+        text: 'Testimonials'
+    },
+    {
+        id:4,
+        img: paid,
+        text: 'Analytics'
+    },
+    {
+        id:5,
+        img: paid,
+        text: 'Gallery'
+    },
+    {
+        id:6,
+        img: paid,
+        text: 'Social Links'
+    },
+    {
+        id:7,
+        img: paid,
+        text: 'Enquiry Form'
+    },
+    {
+        id:8,
+        img: paid,
+        text: 'Products Listing'
     }
 ]

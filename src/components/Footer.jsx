@@ -1,4 +1,6 @@
 import { insta, tiktok, twitter, dreally } from '../assets'
+import { footerLinks, socials } from '../constants'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -10,16 +12,21 @@ const Footer = () => {
 
       <div className='w-full flex flex-col gap-8 items-center justify-center'>
         <div className='flex items-center gap-12 text-primary-900 capitalize font-medium'>
-          <p>Templates</p>
-          <p>pricing</p>
-          <p>about us</p>
+          {footerLinks.map((links) => (
+            <Link key={links.id} to={links.url} className='no-underline text-primary-900'>
+              <p>{links.name}</p>
+            </Link>
+          ) )}
         </div>
 
         <div className='flex items-center gap-12'>
-          <img className='w-[40px] md:w-full' src={dreally} alt="dreally" />
-          <img className='w-[40px] md:w-full' src={insta} alt="instagram" />
-          <img className='w-[40px] md:w-full' src={twitter} alt="twitter" />
-          <img className='w-[40px] md:w-full' src={tiktok} alt="tiktok" />
+        {
+          socials.map((media) => (
+            <Link key={media.id} to={media.url} target='_blank'>
+              <img className='w-[30px] md:w-full' src={media.img} alt={media.img} />
+            </Link>
+          ))
+        }
         </div>
       </div>
     </footer>

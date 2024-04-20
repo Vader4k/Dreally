@@ -75,6 +75,11 @@ import slide8 from './slide8.png'
 //image for about page
 import aboutbg from './aboutbg.png'
 
+//images for pricing page
+import freeCheck from './freeCheck.png'
+import freeDisabled from './freeDisabled.png'
+import paid from './paid.png'
+
 export {
     logo,
     open,
@@ -131,5 +136,8 @@ export {
     slide6,
     slide7,
     slide8,
-    aboutbg
+    aboutbg,
+    freeCheck,
+    freeDisabled,
+    paid,
 }
