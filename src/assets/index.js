@@ -79,6 +79,8 @@ import aboutbg from './aboutbg.png'
 import freeCheck from './freeCheck.png'
 import freeDisabled from './freeDisabled.png'
 import paid from './paid.png'
+import paidBg from './paidBg.png'
+import freeBg from './freeBg.png'
 
 export {
     logo,
@@ -140,4 +142,6 @@ export {
     freeCheck,
     freeDisabled,
     paid,
+    paidBg,
+    freeBg,
 }

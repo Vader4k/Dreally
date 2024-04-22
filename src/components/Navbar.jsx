@@ -7,23 +7,40 @@ import { useState } from 'react'
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
-
+  const [isDropDownOpen, setIsDropDownOpen] = useState(0)
+   
   return (
     <section className='w-full sticky top-5 lg:top-10 z-50 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
-      <nav className='w-full relative  py-4 px-6 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
+      <nav className='w-full relative box  py-4 px-6 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
         <div className='flex items-center gap-8'>
           <Link to='/'>
             <img src={logo} alt="logo" className='px-4 w-[150px]'/>
           </Link>
-          <div className='hidden lg:flex items-center gap-6'>
+          <div className='hidden lg:flex items-center gap-6 relative'>
             {navLinks.map((nav) => (
-              <span  
+              <div  
                 key={nav.id} 
-                className='capitalize text-[1.1rem] cursor-pointer'>
-                  <NavLink to={nav.path} className='font-Sora no-underline text-primary-900 flex items-center p-3 hover:bg-gray-300 hover:text-black rounded-md transition-all'>
-                    {nav.name}
+                className='capitalize text-[1rem] cursor-pointer'>
+                  <NavLink to={nav?.path || nav?.item?.url} className=' nav font-Sora no-underline text-primary-900 flex items-center p-3 hover:text-black rounded-md transition-all'>
+                    <div>
+                      {nav.name}
+                      {nav.item && (
+                        <div className='absolute hidden dropdown top-10 bg-white py-6 px-9 shadow rounded-xl'>
+                          {nav.item.map((i) => (
+                            <div key={i.id}>
+                              <p 
+                                className='no-underline text-primary-900'
+                                onClick={() => window.open(i.url, '_blank')}
+                              >
+                                {i.name}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </NavLink>
-              </span>
+              </div>
             ))}
           </div>
         </div>
@@ -48,8 +65,12 @@ const Navbar = () => {
                   <span  
                     key={nav.id} 
                     className='capitalize text-[2.5rem] cursor-pointer'>
-                      <NavLink to={nav.path} className='font-Sora no-underline text-primary-900 flex items-center p-3 hover:bg-white hover:text-black rounded-md transition-all'>
-                        {nav.name}
+                      <NavLink 
+                        to={nav.path} 
+                        className='font-Sora no-underline text-primary-900 flex items-center p-3 hover:bg-white hover:text-black rounded-md transition-all'>
+                          <p>
+                            {nav.name}
+                          </p>
                       </NavLink>
                   </span>
                 ))}

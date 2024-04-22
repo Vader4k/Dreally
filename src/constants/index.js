@@ -35,13 +35,19 @@ export const navLinks = [
     },
     {
         id: 2,
-        name: 'Marketplace',
-        path: '/marketplace'
+        name: 'Discover',
+        path: '/'
     },
     {
         id: 3,
-        name: 'Discover',
-        path: '/discover'
+        name: 'Learn',
+        item: [
+            {
+                id:1,
+                name: 'Blog',
+                url: 'https://www.tiktok.com/@thrive7group?_t=8ldPSIPYamM&_r=1'
+            },
+        ]
     },
 ]
 
@@ -581,5 +587,71 @@ export const paidExtended = [
         id:8,
         img: paid,
         text: 'Products Listing'
+    },
+    {
+        id:9,
+        img: paid,
+        text: 'Appointment Booking'
+    },
+    {
+        id:10,
+        img: paid,
+        text: 'iFrame Integration'
+    },
+    {
+        id:11,
+        img: paid,
+        text: 'Instagram Feeds Integration'
+    },
+    {
+        id:12,
+        img: paid,
+        text: 'Blog'
+    },
+    {
+        id:13,
+        img: paid,
+        text: 'Custom QR Code'
+    },
+    {
+        id:14,
+        img: paid,
+        text: 'Custom Fonts'
+    },
+    {
+        id:15,
+        img: paid,
+        text: 'Custom JS'
+    },
+    {
+        id:16,
+        img: paid,
+        text: 'Custom CSS'
+    },
+    {
+        id:17,
+        img: paid,
+        text: 'Password Protection'
+    },
+    {
+        id:18,
+        img: paid,
+        text: 'Affiliation'
+    },
+    {
+        id:19,
+        img: paid,
+        text: 'SEO'
+    },
+    {
+        id:20,
+        img: paid,
+        text: 'Payment Set Up'
+    },
+    {
+        id:21,
+        img: paid,
+        text: 'and many more.'
     }
+
 ]
