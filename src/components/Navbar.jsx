@@ -50,7 +50,7 @@ const Navbar = () => {
           <button className='hidden lg:block px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
           <div 
             onClick={() => setIsOpen((prev) => (!prev))}
-            className='block lg:hidden cursor-pointer ml-3'>
+            className={`${isOpen === true? 'bg-primary-400 w-[40px] h-[40px] flex items-center justify-center rounded-full' : ''} block lg:hidden cursor-pointer ml-3`}>
             <img className='w-[25px] h-[25px] object-contain' src={isOpen ? closed : open } alt="navbar buttons" />
           </div>
 
@@ -66,9 +66,14 @@ const Navbar = () => {
                     key={nav.id} 
                     className='capitalize text-[2rem] cursor-pointer'>
                       <NavLink 
-                        to={nav.path}
-                        onClick={()=> setIsClicked(nav.id)} 
-                        className='font-Sora no-underline text-primary-900 flex items-center p-3 hover:bg-white hover:text-black rounded-md transition-all'>
+                        to={nav.path ? nav.path : ''}
+                        onClick={()=> {
+                          setIsClicked(nav.id)
+                          if (nav.path === '/about') {
+                            setIsOpen(false)
+                          }
+                        }} 
+                        className='font-Sora font-bold no-underline text-primary-900 flex items-center p-3 hover:bg-white hover:text-black rounded-md transition-all'>
                           <p>
                             {nav.name}
                             {isClicked === nav.id && nav.item && (
@@ -77,7 +82,10 @@ const Navbar = () => {
                                   <div key={i.id}>
                                     <p 
                                       className='no-underline text-primary-900 text-[1.5rem]'
-                                      onClick={() => window.open(i.url, '_blank')}
+                                      onClick={() => {
+                                        window.open(i.url, '_blank')
+                                        setIsOpen(false)
+                                      }}
                                     >
                                       {i.name}
                                     </p>

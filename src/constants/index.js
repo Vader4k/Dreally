@@ -36,7 +36,7 @@ export const navLinks = [
     {
         id: 2,
         name: 'Discover',
-        path: '/'
+        path: '/#'
     },
     {
         id: 3,
