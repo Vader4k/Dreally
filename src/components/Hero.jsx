@@ -11,7 +11,7 @@ const Hero = () => {
 
 
   return (
-    <section className="w-full mt-10 lg:mt-0 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh] justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 overflow-hidden">
+    <section className="w-full mt-10 lg:mt-0 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh] justify-between px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40 overflow-hidden">
       <div className="flex flex-col gap-5 items-start lg:w-[50%] mb-20">
         <h1 className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] max-w lg:leading-[4.6rem]">
           Empower your online presence with Dreally, your all in one platform.

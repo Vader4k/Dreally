@@ -40,12 +40,12 @@ const About = () => {
         </div>
         </div>
 
-        <div className='my-20 pb-20 w-full flex items-start justify-center gap-16 '>
+        <div className='my-10 w-full flex flex-wrap items-start justify-center gap-16'>
           {why.map((data) => (
-            <div key={data.id} className='flex flex-col gap-4 px-8 py-6 min-h-[310px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
+            <div key={data.id} className='flex flex-col gap-4 px-6 lg:px-8 py-4 lg:py-6 min-h-[310px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
               <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover '/>
-              <h1 className='font-semibold text-2xl text-primary-800'>{data.title}</h1>
-              <p className='max-w-[350px] text-primary-800 text-[1rem] leading-6'>{data.text}</p>
+              <h1 className='font-semibold text-xl lg:text-2xl text-primary-800'>{data.title}</h1>
+              <p className='max-w-[350px] text-primary-800 text-[0.95rem] lg:text-[1rem] leading-6'>{data.text}</p>
             </div>
           ))}
         </div>

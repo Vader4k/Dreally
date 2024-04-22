@@ -33,7 +33,7 @@ const Services = () => {
 
 
   return (
-    <section className='w-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
+    <section className='w-full px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
       <h1 className='text-center font-bold text-3xl lg:text-4xl tracking-tighter pb-10'>why Dreally?</h1>
       <div className='my-10 w-full flex flex-wrap items-start justify-center gap-16'>
         {why.map((data) => (
@@ -65,9 +65,9 @@ const Services = () => {
         </span> 
       </h1>
 
-      <div className='w-full flex flex-wrap gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
+      <div className='w-full flex flex-col md:flex-row gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
           <div className='flex flex-col gap-4'>
-            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
+            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[400px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] transition-all'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
