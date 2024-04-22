@@ -125,7 +125,7 @@ const Services = () => {
         A platform that helps you 
         <br /> 
        {" "}
-        <span className='text-primary-400'>
+        <span className='text-primary-400 min-h-[70px]'>
           <Typewriter
             words={['elevate your networking game', 'showcase your professional portfolio', 'connect seamlessly']} 
             loop={true}
