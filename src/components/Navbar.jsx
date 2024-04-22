@@ -7,7 +7,7 @@ import { useState } from 'react'
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
-  const [isDropDownOpen, setIsDropDownOpen] = useState(0)
+  const [isClicked, setIsClicked] = useState(0)
    
   return (
     <section className='w-full sticky top-5 lg:top-10 z-50 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
@@ -64,12 +64,27 @@ const Navbar = () => {
                   {navLinks.map((nav) => (
                   <span  
                     key={nav.id} 
-                    className='capitalize text-[2.5rem] cursor-pointer'>
+                    className='capitalize text-[2rem] cursor-pointer'>
                       <NavLink 
-                        to={nav.path} 
+                        to={nav.path}
+                        onClick={()=> setIsClicked(nav.id)} 
                         className='font-Sora no-underline text-primary-900 flex items-center p-3 hover:bg-white hover:text-black rounded-md transition-all'>
                           <p>
                             {nav.name}
+                            {isClicked === nav.id && nav.item && (
+                              <div className='py-5 px-5'>
+                                {nav.item.map((i) => (
+                                  <div key={i.id}>
+                                    <p 
+                                      className='no-underline text-primary-900 text-[1.5rem]'
+                                      onClick={() => window.open(i.url, '_blank')}
+                                    >
+                                      {i.name}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </p>
                       </NavLink>
                   </span>
