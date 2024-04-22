@@ -22,7 +22,7 @@ const AccordionItem = ({ title, icon, text }) => {
 
 const Accordion = ({ items }) => {
     return (
-        <div className="flex w-full flex-wrap justify-start items-start gap-8">
+        <div className="flex w-full flex-wrap justify-center items-start gap-8">
             {items.map((item) => (
                 <AccordionItem 
                     key={item.title} 

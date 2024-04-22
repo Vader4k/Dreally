@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { freeDefault, freeExtended, paidDefault, paidExtended } from '../constants'
 import { freeBg, paidBg } from '../assets'
+import { Link } from "react-router-dom"
 
 const Pricing = () => {
 
@@ -12,7 +13,7 @@ const Pricing = () => {
         <div className='px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 flex flex-col items-center text-center gap-8'>
             <div className="flex flex-col gap-7">
                 <p className="text-primary-400 font-semibold">Pricing</p>
-                <h1 className="font-bold text-[4rem] text-[#170F49]">Dreally Pricing</h1>
+                <h1 className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] text-[#170F49]">Dreally Pricing</h1>
                 <p className="max-w-[700px] leading-6">Unlock the full potential of your networking experience with Dreally. Choose the plan that fits your needs and start connecting, showcasing, and growing today.</p>
             </div>
 
@@ -67,9 +68,10 @@ const Pricing = () => {
                         )}
                     </div>
                     <span onClick={() => setSeeMore((prev) => (!prev))} className="font-bold justify-center flex my-4 cursor-pointer text-[0.9rem] ml-8">{seeMore === false ? 'See all features' : 'See less features'}</span>
-                    <button className="w-full cursor-pointer rounded-[50px] border-none bg-primary-500 text-white p-6 font-semibold text-[1rem]">Get Started</button>
+                    <Link to='http://app.dreally.com/login'>
+                        <button className="w-full cursor-pointer rounded-[50px] border-none bg-primary-500 text-white p-6 font-semibold text-[1rem]">Get Started</button>
+                    </Link>
                 </div>
-
                 {/* pro plan card */}
                 <div className="w-full relative max-w-[300px] py-6 px-6 rounded-3xl flex flex-col items-start bg-[#6666FF]">
                     <div className="flex items-center gap-5 mt-5">
@@ -110,8 +112,9 @@ const Pricing = () => {
                         )}
                     </div>
                     <span onClick={() => setSeeMore((prev) => (!prev))} className="font-bold justify-center flex my-4 cursor-pointer text-[0.9rem] text-gray-300 ml-8">{seeMore === false ? 'See all features' : 'See less features'}</span>
-                    <button className="w-full cursor-pointer rounded-[50px] border-none bg-white p-6  text-[1rem] text-primary-500">Try Pro for 7 days</button>
-
+                    <Link to='https://app.dreally.com/admin/choose-payment-type/2'>
+                        <button className="w-full cursor-pointer rounded-[50px] border-none bg-white p-6  text-[1rem] text-primary-500">Try Pro for 7 days</button>
+                    </Link>
                     {/* absolute tag on top of the card */}
                     <div className="absolute top-3 right-4 bg-primary-400 text-[#FFFFFF] px-5 py-2 rounded-md text-[0.7rem] font-thin font-Sora">
                         Popular
