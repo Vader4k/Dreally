@@ -121,7 +121,7 @@ const Services = () => {
 
       <Info />
 
-      <h1 className=' text-center font-bold text-2xl md:text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
+      <h1 className=' text-center font-bold text-xl md:text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
         A platform that helps you 
         <br /> 
        {" "}
