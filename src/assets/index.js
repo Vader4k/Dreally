@@ -36,11 +36,11 @@ import screen2 from './screen2.png'
 
 
 //images for why dreally
-import customizable from './customizable.png'
-import dreallyCard from './dreallyCard.png'
-import analytics from './analytics.png'
-import seamless from './seamless.png'
-import sharable from './shearable.png'
+import customizable from './customizable.webp'
+import dreallyCard from './dreallyCard.webp'
+import analytics from './analytics.webp'
+import seamless from './seamless.webp'
+import sharable from './shearable.webp'
 
 //icons for all avilable features
 import affiliate from './affiliate.png'

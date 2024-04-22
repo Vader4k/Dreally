@@ -141,12 +141,12 @@ const Services = () => {
 
       <div className='w-full flex flex-col md:flex-row gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
           <div className='flex flex-col gap-4'>
-            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
+            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px]`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] transition-all'/>
+                <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
                   <h1 
-                    className={`font-semibold text-xl md:text-2xl transition-all ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
+                    className={`font-semibold text-xl md:text-2xl ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(1)}
                   >
                     Customizable Portfolio showcase
@@ -160,12 +160,12 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
+            <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px]`}>
               <div className='flex items-start  gap-3'>
-                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px]  transition-all'/>
+                <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px]'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
                   <h1 
-                    className={`font-semibold text-xl md:text-2xl ${active === 2 ? 'text-primary-800' : 'text-neutral-100'} transition-all`}
+                    className={`font-semibold text-xl md:text-2xl ${active === 2 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(2)}
                   >
                     Seamless Networking Tools
@@ -179,7 +179,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
+            <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px]`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
@@ -198,7 +198,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
+            <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px]`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
@@ -217,7 +217,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
+            <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px]`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
@@ -238,7 +238,7 @@ const Services = () => {
 
           </div>
 
-          <div className=''>{getImage()}</div>
+          <div>{getImage()}</div>
       </div>
     </section>
   )
