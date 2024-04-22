@@ -3,6 +3,7 @@ import { charts, sharable, chartsClosed, card, cardClosed, customize, customizeC
 import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import Info from './Info'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const Services = () => {
 
@@ -16,15 +17,80 @@ const Services = () => {
   const getImage = () => {
     switch (active) {
       case 1:
-        return <img className='max-w-[800px] w-full object-cover' src={customizable} alt="customizable profile" />;
+        return (
+          <AnimatePresence>
+            <motion.img
+              key="customizable"
+              className="max-w-[800px] w-full object-cover"
+              src={customizable}
+              alt="customizable profile"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.5 }}
+            />
+          </AnimatePresence>
+        );
       case 2:
-        return <img className='max-w-[800px] w-full object-cover'  src={seamless} alt="seamless connection" />;
+        return (
+          <AnimatePresence>
+            <motion.img
+              key="customizable"
+              className="max-w-[800px] w-full object-cover"
+              src={seamless}
+              alt="customizable profile"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.5 }}
+            />
+          </AnimatePresence>
+        );
       case 3:
-        return <img className='max-w-[800px] w-full object-cover'  src={analytics} alt="Analutics and insight" />;
+        return (
+          <AnimatePresence>
+            <motion.img
+              key="customizable"
+              className="max-w-[800px] w-full object-cover"
+              src={analytics}
+              alt="customizable profile"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.5 }}
+            />
+          </AnimatePresence>
+        );
       case 4:
-        return <img className='max-w-[800px] w-full object-cover'  src={sharable} alt="sharable profile links" />;
+        return (
+          <AnimatePresence>
+            <motion.img
+              key="customizable"
+              className="max-w-[800px] w-full object-cover"
+              src={sharable}
+              alt="customizable profile"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.5 }}
+            />
+          </AnimatePresence>
+        );
       case 5:
-        return <img className='max-w-[800px] w-full object-cover'  src={dreallyCard} alt="dreally business card" />;
+        return (
+          <AnimatePresence>
+            <motion.img
+              key="customizable"
+              className="max-w-[800px] w-full object-cover"
+              src={dreallyCard}
+              alt="customizable profile"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.5 }}
+            />
+          </AnimatePresence>
+        );
       default:
         return null;
     }
@@ -40,7 +106,15 @@ const Services = () => {
           <div key={data.id} className='flex flex-col gap-4 px-6 lg:px-8 py-4 lg:py-6 min-h-[310px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
             <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover '/>
             <h1 className='font-semibold text-xl lg:text-2xl text-primary-800'>{data.title}</h1>
-            <p className='max-w-[350px] text-primary-800 text-[0.95rem] lg:text-[1rem] leading-6'>{data.text}</p>
+            <motion.p
+              initial={{ opacity: 0, y: "50%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}   
+              className='max-w-[350px] text-primary-800 text-[0.95rem] lg:text-[1rem] leading-6'
+              >
+                {data.text}
+            </motion.p>
           </div>
         ))}
       </div>
@@ -67,7 +141,7 @@ const Services = () => {
 
       <div className='w-full flex flex-col md:flex-row gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
           <div className='flex flex-col gap-4'>
-            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[400px] transition-all`}>
+            <div className={`${active === 1 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 1 ? customize : customizeClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] transition-all'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
@@ -86,7 +160,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
+            <div className={`${active === 2 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 2 ? tag : tagClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px]  transition-all'/>
                 <div className='flex flex-col w-full items-start gap-3 transition-all'>
@@ -105,7 +179,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
+            <div className={`${active === 3 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 3 ? charts : chartsClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
@@ -124,7 +198,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
+            <div className={`${active === 4 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 4 ? share : shareClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>
@@ -143,7 +217,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 min-w-[400px] transition-all`}>
+            <div className={`${active === 5 ? 'border bg-primary-50' : ''} flex flex-col gap-3 cursor-pointer p-6 w-full max-w-[500px] transition-all`}>
               <div className='flex items-start  gap-3'>
                 <img src={`${active === 5 ? card : cardClosed}`} alt="customize icon" className='w-[25px] mt-1 md:w-[30px] '/>
                 <div className='flex flex-col w-full items-start gap-3'>

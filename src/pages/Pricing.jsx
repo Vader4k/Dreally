@@ -2,11 +2,19 @@ import { useState } from "react"
 import { freeDefault, freeExtended, paidDefault, paidExtended } from '../constants'
 import { freeBg, paidBg } from '../assets'
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 const Pricing = () => {
 
     const [price, setPrice] = useState(true)
     const [seeMore, setSeeMore] = useState(false)
+
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+      };
+      
 
   return (
     <section className="w-full my-20">
@@ -22,7 +30,7 @@ const Pricing = () => {
                 <div 
                     onClick={() => setPrice((prev) => (!prev))}
                     className={`relative bg-primary-700 w-[60px] h-[30px] p-1 flex items-center rounded-3xl transition-all ${price === true ? 'justify-start' : 'justify-end'} `}>
-                    <div className="bg-white w-[20px] h-[20px] rounded-full cursor-pointer"/>
+                    <motion.div layout transition={spring} className="bg-white w-[20px] h-[20px] rounded-full cursor-pointer"/>
                 </div>
                 <span>NGN</span>
             </div>

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { motion } from 'framer-motion'
 
 const AccordionItem = ({ title, icon, text }) => {
 
@@ -7,7 +8,12 @@ const AccordionItem = ({ title, icon, text }) => {
     const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <div className="w-full max-w-[500px] bg-primary-50 p-6 text-center rounded-[15px] flex  flex-col items-start box">
+    <motion.div
+        initial={{ opacity: 0, y: "50%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}   
+        className="w-full max-w-[500px] bg-primary-50 p-6 text-center rounded-[15px] flex  flex-col items-start box">
         <button
         onClick={toggle}
         className="w-full flex items-center justify-between bg-primary-50 border-none cursor-pointer"
@@ -15,8 +21,16 @@ const AccordionItem = ({ title, icon, text }) => {
             <h1 className="font-bold text-[1.1rem] text-primary-800">{title}</h1>
             <img src={icon} className="w-[40px] h-[40px]" alt="icons" />
         </button>
-        {isOpen && <div className="max-w-[450px] text-start leading-5 py-8 text-primary-800">{text}</div>}
-    </div>
+        {isOpen && 
+            <motion.div
+            initial={{ opacity: 0, y: '50%' }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }} 
+                className="max-w-[450px] text-start leading-5 py-8 text-primary-800"
+            >
+                {text}
+            </motion.div>}
+    </motion.div>
   )
 }
 

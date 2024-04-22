@@ -2,6 +2,7 @@ import { questions } from "../constants"
 import { useState } from "react"
 import up from '../assets/up.png'
 import down from '../assets/down.png'
+import { motion } from 'framer-motion'
 
 const FaQs = () => {
 
@@ -34,9 +35,13 @@ const FaQs = () => {
               /> {/* Toggle arrow based on active */}
             </div>
             {active === item.id && ( // Conditionally render content based on active state
-              <div className="text-[1rem] max-w-[800px] leading-7 text-neutral-300">
+              <motion.div
+                initial={{ opacity: 0, y: '50%' }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}  
+                className="text-[1rem] max-w-[800px] leading-7 text-neutral-300">
                 {item.reply}
-              </div>
+              </motion.div>
             )}
           </div>
         ))}

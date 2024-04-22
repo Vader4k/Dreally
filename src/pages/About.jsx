@@ -2,12 +2,12 @@ import group from '../assets/Group 1.png'
 import { aboutbg } from '../assets'
 import { why } from '../constants'
 import { GetStarted, FaQs } from '../components'
-
+import { motion } from 'framer-motion'
 const About = () => {
   return (
     <section className="w-full">
       <div className='px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
-        <div className="w-full flex flex-wrap items-center justify-between my-10 md:my-20">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between my-10 md:my-20">
           <div className="flex flex-col gap-5 items-start w-full mb-20">
             <h1 className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] max-w leading-lg:[4.6rem]">
               About Us
@@ -45,7 +45,14 @@ const About = () => {
             <div key={data.id} className='flex flex-col gap-4 px-6 lg:px-8 py-4 lg:py-6 min-h-[310px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
               <img src={data.icon} alt="icons" className='w-[50px] h-[50px] object-cover '/>
               <h1 className='font-semibold text-xl lg:text-2xl text-primary-800'>{data.title}</h1>
-              <p className='max-w-[350px] text-primary-800 text-[0.95rem] lg:text-[1rem] leading-6'>{data.text}</p>
+              <motion.p
+                initial={{ opacity: 0, y: "50%" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }} 
+                className='max-w-[350px] text-primary-800 text-[0.95rem] lg:text-[1rem] leading-6'>
+                  {data.text}
+              </motion.p>
             </div>
           ))}
         </div>

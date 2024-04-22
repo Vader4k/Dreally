@@ -2,6 +2,7 @@ import { started } from "../constants"
 import up from '../assets/up.png'
 import down from '../assets/down.png'
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const GetStarted = () => {
 
@@ -40,7 +41,11 @@ const GetStarted = () => {
               <div className="px-5 flex flex-col gap-3 text-[0.95rem]">
                 {item.text.map((text) => (
                   <ul key={text.id} className="list-none">
-                    <li className="list-inside">{counter++}. {text.text}</li>
+                    <motion.li
+                      initial={{ opacity: 0, y: '50%' }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }} 
+                      className="list-inside">{counter++}. {text.text}</motion.li>
                   </ul>
                 ))}
               </div>
