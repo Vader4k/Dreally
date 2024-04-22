@@ -11,7 +11,7 @@ const Slider = () => {
       <div className='w-full text-center flex items-center justify-center'>
         <h1 className='font-extrabold text-[2rem] md:text-[2.5rem] max-w-[650px] px-5'>The Best Modern Networking Solution For <span>
           <Swiper
-              className='h-[100px] my-6 text-primary-400'
+              className='h-[100px] my-6 text-primary-400 overflow-hidden'
               modules={[Autoplay ]}
               grabCursor={true}
               direction='vertical'
@@ -48,7 +48,7 @@ const Slider = () => {
         </span></h1>
       </div>
 
-      <div className='w-full my-10'>
+      <div className='w-full my-16'>
         <Carousel />
       </div>
 
