@@ -121,11 +121,11 @@ const Services = () => {
 
       <Info />
 
-      <h1 className='mb-20 text-center font-bold text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
+      <h1 className=' text-center font-bold text-2xl md:text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
         A platform that helps you 
         <br /> 
        {" "}
-        <div className='text-primary-400 h-[100px] md:h-full overflow-hidden'>
+        <div className='text-primary-400  overflow-hidden'>
           <Typewriter
             words={['elevate your networking game', 'showcase your professional portfolio', 'connect seamlessly']} 
             loop={true}
