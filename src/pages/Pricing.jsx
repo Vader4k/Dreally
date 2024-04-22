@@ -68,7 +68,7 @@ const Pricing = () => {
                         )}
                     </div>
                     <span onClick={() => setSeeMore((prev) => (!prev))} className="font-bold justify-center flex my-4 cursor-pointer text-[0.9rem] ml-8">{seeMore === false ? 'See all features' : 'See less features'}</span>
-                    <Link to='http://app.dreally.com/login'>
+                    <Link className="w-full" to='http://app.dreally.com/login'>
                         <button className="w-full cursor-pointer rounded-[50px] border-none bg-primary-500 text-white p-6 font-semibold text-[1rem]">Get Started</button>
                     </Link>
                 </div>
@@ -112,7 +112,7 @@ const Pricing = () => {
                         )}
                     </div>
                     <span onClick={() => setSeeMore((prev) => (!prev))} className="font-bold justify-center flex my-4 cursor-pointer text-[0.9rem] text-gray-300 ml-8">{seeMore === false ? 'See all features' : 'See less features'}</span>
-                    <Link to='https://app.dreally.com/admin/choose-payment-type/2'>
+                    <Link className="w-full" to='https://app.dreally.com/admin/choose-payment-type/2'>
                         <button className="w-full cursor-pointer rounded-[50px] border-none bg-white p-6  text-[1rem] text-primary-500">Try Pro for 7 days</button>
                     </Link>
                     {/* absolute tag on top of the card */}
