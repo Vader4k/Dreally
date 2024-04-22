@@ -31,8 +31,8 @@ import youtube from './youtube.png'
 import dreally from './dreally.png'
 
 //hero cartousel images
-import screen1 from './screen1.png'
-import screen2 from './screen2.png'
+import screen1 from './screen1.webp'
+import screen2 from './screen2.webp'
 
 
 //images for why dreally

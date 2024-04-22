@@ -1,5 +1,5 @@
-import img1 from '../assets/about1.png'
-import img2 from '../assets/about2.png'
+import img1 from '../assets/about1.webp'
+import img2 from '../assets/about2.webp'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
