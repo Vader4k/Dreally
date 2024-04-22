@@ -2,6 +2,7 @@ import { logo, open, closed } from '../assets'
 import { Link, NavLink } from 'react-router-dom'
 import { navLinks } from '../constants'
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 
 const Navbar = () => {
@@ -56,13 +57,21 @@ const Navbar = () => {
 
         </div>
       </nav>
-      <div>
+      <AnimatePresence mode='wait'>
         {
           isOpen === true && (
-            <div className='p-6 top-0 left-0 right-0 bottom-0 min-h-[100vh] fixed z-10 bg-primary-300 flex items-center '>
+            <motion.div 
+            initial={{ x: '100%' }} // Starts from left side of screen (for initial render)
+            animate={{ x: 0 }} // Animate based on isOpen state
+            exit={{ x: '100%' }} //
+            transition={{ duration: 0.5, ease: 'easeInOut' }} // Adjust animation duration
+            className='p-6 top-0 left-0 right-0 bottom-0 min-h-[100vh] fixed z-10 bg-primary-300 flex items-center '>
               <div className='w-full'>
                   {navLinks.map((nav) => (
-                  <span  
+                  <motion.div 
+                    initial={{ opacity: 0, x: '100%' }} // Starts invisible with slight offset
+                    animate={{ opacity: 1, x: 0 }} // Animates to opacity 1 and original position
+                    transition={{ duration: 0.3, ease: 'easeInOut', delay: navLinks.indexOf(nav) * 0.2 }} // Stagger animation based on index 
                     key={nav.id} 
                     className='capitalize text-[2rem] cursor-pointer'>
                       <NavLink 
@@ -95,17 +104,17 @@ const Navbar = () => {
                             )}
                           </p>
                       </NavLink>
-                  </span>
+                  </motion.div>
                 ))}
                 <div className='flex flex-col items-start gap-8 my-6'>
                 <button className='px-16 py-6 bg-white border-none rounded-[100px] cursor-pointer'>Sign In</button>
                 <button className='px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
                 </div>
               </div>
-            </div>
+            </motion.div>
               )
         }
-      </div>
+      </AnimatePresence>
     </section>
   )
 }
