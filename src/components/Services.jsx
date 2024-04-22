@@ -121,11 +121,11 @@ const Services = () => {
 
       <Info />
 
-      <h1 className='text-center font-bold text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
+      <h1 className='mb-20 text-center font-bold text-3xl lg:text-4xl mt-20 lg:mt-40 leading-[50px]'>
         A platform that helps you 
         <br /> 
        {" "}
-        <span className='text-primary-400 min-h-[70px]'>
+        <div className='text-primary-400 h-[100px] md:h-full overflow-hidden'>
           <Typewriter
             words={['elevate your networking game', 'showcase your professional portfolio', 'connect seamlessly']} 
             loop={true}
@@ -136,7 +136,7 @@ const Services = () => {
             delaySpeed={2000}
             deleteSpeed={30}
           />
-        </span> 
+        </div> 
       </h1>
 
       <div className='w-full flex flex-col md:flex-row gap-10 lg:gap-0 items-center justify-between py-10 lg:py-20'>
