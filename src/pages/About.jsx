@@ -3,41 +3,58 @@ import { aboutbg } from '../assets'
 import { why } from '../constants'
 import { GetStarted, FaQs } from '../components'
 import { motion } from 'framer-motion'
+
 const About = () => {
   return (
     <section className="w-full">
       <div className='px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
         <div className="w-full flex flex-col md:flex-row items-center justify-between my-10 md:my-20">
           <div className="flex flex-col gap-5 items-start w-full mb-20">
-            <h1 className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] max-w leading-lg:[4.6rem]">
+            <motion.h1
+            initial={{ opacity: 0, x: '-100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }} 
+            className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] max-w leading-lg:[4.6rem]">
               About Us
-            </h1>
-            <p className="leading-7 text-neutral-300 text-[1rem] max-w-[600px]">
-              Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking
-            </p>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: '100%' }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5 }} 
+              className="leading-7 text-neutral-300 text-[1rem] max-w-[600px]">
+                Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking
+            </motion.p>
             <button 
               className="py-4 my-5 px-24 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
             >
               Sign Up, its free!
             </button>
-            <div className='flex items-center gap-4'>
-              <div className='flex items-center'>
-                <img className='max-w-[200px]' src={group} alt="group" />
-              </div>
-              <div className='flex flex-col'>
-                <h1 className='font-semibold text-3xl font-Sora'>2000+</h1>
-                <p className='text-neutral-300 font-Sora'>Portfolios</p>
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: '100%' }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5 }} 
+              className='flex items-center gap-4'>
+                <div className='flex items-center'>
+                  <img className='max-w-[200px]' src={group} alt="group" />
+                </div>
+                <div className='flex flex-col'>
+                  <h1 className='font-semibold text-3xl font-Sora'>2000+</h1>
+                  <p className='text-neutral-300 font-Sora'>Portfolios</p>
+                </div>
+            </motion.div>
           </div>
 
-          <div className='mb-20 w-full h-fit justify-end items-end flex'>
+          <motion.div
+          initial={{ opacity: 0, x: '100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}  
+          className='mb-20 w-full h-fit justify-end items-end flex'>
           <img 
             src={aboutbg} 
             alt="dreally" 
             className='w-full rounded-2xl'
             />
-        </div>
+        </motion.div>
         </div>
 
         <div className='my-10 w-full flex flex-wrap items-start justify-center gap-16'>
