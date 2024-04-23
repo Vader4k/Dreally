@@ -45,10 +45,13 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-
         <div className='flex items-center gap-4'>
-          <button className='hidden lg:block px-16 py-6 bg-transparent border-[1px] border-gray-400 rounded-[100px] cursor-pointer'>Sign In</button>
-          <button className='hidden lg:block px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
+          <Link className='no-underline' to='https://app.dreally.com/login'>
+            <button className='hidden lg:block px-16 py-6 bg-transparent border-[1px] border-gray-400 rounded-[100px] cursor-pointer'>Sign In</button>
+          </Link>
+          <Link className='no-underline' to='https://app.dreally.com/register'>
+            <button className='hidden lg:block px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
+          </Link>
           <div 
             onClick={() => setIsOpen((prev) => (!prev))}
             className={`${isOpen === true? 'bg-primary-400 w-[40px] h-[40px] flex items-center justify-center rounded-full' : ''} block lg:hidden cursor-pointer ml-3`}>
