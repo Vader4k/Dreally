@@ -45,7 +45,7 @@ export const navLinks = [
             {
                 id:1,
                 name: 'Blog',
-                url: 'https://http://Blog.dreally.com/'
+                url: 'https://blog.dreally.com/'
             },
         ]
     },
@@ -311,7 +311,7 @@ export const footerLinks = [
     {
         id:1,
         name: 'Blog',
-        url: 'https://http://Blog.dreally.com/'
+        url: 'https://blog.dreally.com/'
     },
     {
         id:2,
