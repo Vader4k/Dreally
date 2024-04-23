@@ -45,7 +45,7 @@ export const navLinks = [
             {
                 id:1,
                 name: 'Blog',
-                url: 'https://www.tiktok.com/@thrive7group?_t=8ldPSIPYamM&_r=1'
+                url: 'https://http://Blog.dreally.com/'
             },
         ]
     },
@@ -155,13 +155,13 @@ export const features = [
     {
         id:14,
         title: 'Payment Setup',
-        text: 'Capture leads and inquiries easily with customizable enquiry forms',
+        text: 'Streamline your billing process with automated invoicing for your services or product and Choose from a variety of payment gateways to accept payments seamlessly.',
         icon: payment
     },
     {
         id:15,
         title: 'Link Ladder',
-        text: 'Customize your account with advanced font options',
+        text: 'Create different personalized links for different profiles and Easily manage and organize all your important links in one place.',
         icon: ladder
     },
     {
@@ -310,8 +310,8 @@ export const questions = [
 export const footerLinks = [
     {
         id:1,
-        name: 'Templates',
-        url: '/'
+        name: 'Blog',
+        url: 'https://http://Blog.dreally.com/'
     },
     {
         id:2,

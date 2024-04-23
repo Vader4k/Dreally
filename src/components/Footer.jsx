@@ -1,4 +1,3 @@
-import { insta, tiktok, twitter, dreally } from '../assets'
 import { footerLinks, socials } from '../constants'
 import { Link } from 'react-router-dom'
 
