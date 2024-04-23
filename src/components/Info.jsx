@@ -5,6 +5,7 @@ import { Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css/bundle';
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 const Info = () => {
   return (
@@ -40,9 +41,11 @@ const Info = () => {
                 className='text-neutral-300 leading-7 py-6'>
                 Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking
             </motion.p>
-            <button className=' px-16 py-4 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>
-                Get Started
-            </button>
+            <Link to='https://app.dreally.com/register'>
+                <button className=' px-16 py-4 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>
+                    Get Started
+                </button>
+            </Link>
         </div>
     </section>
   )

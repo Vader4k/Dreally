@@ -74,7 +74,7 @@ const Navbar = () => {
                   <motion.div 
                     initial={{ opacity: 0, x: '100%' }} // Starts invisible with slight offset
                     animate={{ opacity: 1, x: 0 }} // Animates to opacity 1 and original position
-                    transition={{ duration: 0.3, ease: 'easeInOut', delay: navLinks.indexOf(nav) * 0.2 }} // Stagger animation based on index 
+                    transition={{ duration: 0.5, ease: 'easeInOut', delay: navLinks.indexOf(nav) * 0.2 }} // Stagger animation based on index 
                     key={nav.id} 
                     className='capitalize text-[2rem] cursor-pointer'>
                       <NavLink 
@@ -110,8 +110,12 @@ const Navbar = () => {
                   </motion.div>
                 ))}
                 <div className='flex flex-col items-start gap-8 my-6'>
-                <button className='px-16 py-6 bg-white border-none rounded-[100px] cursor-pointer'>Sign In</button>
-                <button className='px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
+                <Link to='https://app.dreally.com/login'>
+                  <button className='px-16 py-6 bg-white border-none rounded-[100px] cursor-pointer'>Sign In</button>
+                </Link>
+                <Link to='https://app.dreally.com/register'>
+                  <button className='px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
+                </Link>
                 </div>
               </div>
             </motion.div>
