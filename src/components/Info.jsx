@@ -30,7 +30,7 @@ const Info = () => {
         </div>
 
         <div className='w-full py-5 '>
-            <h1 className='font-extrabold text-2xl lg:text-3xl max-w-[500px]'>
+            <h1 className='font-extrabold text-2xl lg:text-3xl max-w-[500px] capitalize'>
                 Craft and personalize your Dreally profile in minutes
             </h1>
             <motion.p
@@ -38,7 +38,7 @@ const Info = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}  
-                className='text-neutral-300 leading-5 py-6 text-[0.8rem]'>
+                className='text-neutral-300 leading-6 py-6 text-[1rem]'>
                 Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking
             </motion.p>
             <Link to='https://app.dreally.com/register'>

@@ -26,23 +26,23 @@ const Hero = () => {
           initial={{ opacity: 0, y: '100%' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
-          className="leading-5 text-neutral-300 text-[0.8rem] max-w-[500px]">
+          className="leading-6 text-neutral-300 text-[1rem] max-w-[500px]">
           Join the community of professionals taking their online presence to the next level with Dreally. Connect effortlessly, showcase your expertise, and make a lasting impression. Start networking smarter today!
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: '100%' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }} 
-          className='flex items-center gap-5'>
+          className='flex items-center gap-3'>
             <Link to='https://app.dreally.com/register'>
             <button 
-              className="py-4 my-3 px-8 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
+              className="py-4 my-3 px-9 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
             >
               Sign Up, its free!
             </button>
             </Link>
 
-          <div className='w-[40px] h-[40px] rounded-full flex items-center justify-center bg-primary-400'>
+          <div className='w-[50px] h-[50px] rounded-full flex items-center justify-center bg-primary-400'>
             <img className='animate-pulse w-[30px] cursor-pointer' src={play} alt="play" />
           </div>
         </motion.div>

@@ -26,7 +26,7 @@ const AccordionItem = ({ title, icon, text }) => {
             initial={{ opacity: 0, y: '50%' }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }} 
-                className="max-w-[550px] text-start text-[0.8rem] leading-5 py-5 text-primary-800"
+                className="max-w-[550px] text-start text-[0.9rem] leading-6 py-5 text-primary-800"
             >
                 {text}
             </motion.div>}
@@ -36,7 +36,7 @@ const AccordionItem = ({ title, icon, text }) => {
 
 const Accordion = ({ items }) => {
     return (
-        <div className="flex w-full flex-wrap justify-start items-start gap-8">
+        <div className="flex w-full flex-wrap justify-center items-start gap-8">
             {items.map((item) => (
                 <AccordionItem 
                     key={item.title} 

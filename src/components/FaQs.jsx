@@ -17,7 +17,7 @@ const FaQs = () => {
       <div className="flex flex-col gap-5">
         <div className="text-center">
           <h1 className="text-xl font-extrabold">Frequently Asked Questions</h1>
-          <p className="text-neutral-300 py-4 text-[0.8rem]">Get answers to all the questions bothering you</p>
+          <p className="text-neutral-300 py-4 text-[0.9rem]">Get answers to all the questions bothering you</p>
         </div>
 
         <div className="w-full flex flex-col gap-6 mt-5">
@@ -39,7 +39,7 @@ const FaQs = () => {
                 initial={{ opacity: 0, y: '50%' }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}  
-                className="text-[0.8rem] max-w-[600px] leading-5 text-neutral-300">
+                className="text-[0.9rem] max-w-[600px] leading-6 text-neutral-300">
                 {item.reply}
               </motion.div>
             )}

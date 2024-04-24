@@ -11,7 +11,7 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }} 
         className='w-full mx-auto max-w-[1100px] h-[400px] bg-vector object-cover bg-no-repeat bg-center bg-primary-500 rounded-3xl flex flex-col items-center justify-center gap-12'>
-          <h1 className='text-white font-extrabold text-[1.5rem] max-w-[400px] text-center px-6 md:px-0'>Start Creating your free portfolio for any industry today</h1>
+          <h1 className='text-white font-extrabold text-[1.5rem] max-w-[400px] text-center px-6 md:px-0 capitalize'>Start Creating your free portfolio for any industry today</h1>
           <Link to='https://app.dreally.com/register'>
           <button className='cursor-pointer bg-white font-bold text-primary-500 text-[0.8rem] px-12 py-4 border-none rounded-3xl'>Get Started</button>
           </Link>

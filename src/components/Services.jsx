@@ -100,10 +100,10 @@ const Services = () => {
 
   return (
     <section className='w-full px-6 sm:px-8 md:px-12'>
-      <h1 className='text-center font-bold text-3xl tracking-tighter pb-10'>why Dreally?</h1>
+      <h1 className='text-center font-bold text-3xl tracking-tighter pb-10'>Why Dreally?</h1>
       <div className='my-10 w-full flex-wrap flex items-start justify-center gap-8'>
         {why.map((data) => (
-          <div key={data.id} className='flex flex-col gap-3 px-5  py-5  min-h-max box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
+          <div key={data.id} className='flex flex-col gap-3 px-5  py-5  md:min-h-[280px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
             <img src={data.icon} alt="icons" className='w-[30px] h-[30px] object-cover '/>
             <h1 className='font-semibold text-base text-primary-800'>{data.title}</h1>
             <motion.p
@@ -111,7 +111,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}   
-              className='max-w-[300px] text-primary-800 text-[0.8rem] leading-5'
+              className='max-w-[300px] text-primary-800 text-[0.9rem] leading-6'
               >
                 {data.text}
             </motion.p>
@@ -149,11 +149,11 @@ const Services = () => {
                     className={`font-semibold text-[1rem] lg:text-xl ${active === 1 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(1)}
                   >
-                    Customizable Portfolio showcase
+                    Customizable Portfolio Showcase
                   </h1>
                   { active === 1 
                     && 
-                    (<div className='max-w-[350px] leading-5 text-primary-800 text-[0.8rem]'>
+                    (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
                       showcase your skills and achievements with customizable portfolio templates
                   </div>) }
               </div>
@@ -172,7 +172,7 @@ const Services = () => {
                   </h1>
                   { active === 2 
                     && 
-                    (<div className='max-w-[350px] leading-5 text-primary-800 text-[0.8rem]'>
+                    (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
                       Connect effortlessly with click-to-call functionality, instant sharing, and seamless contact management.
                   </div>) }
               </div>
@@ -187,11 +187,11 @@ const Services = () => {
                    className={`font-semibold text-[1rem] lg:text-xl ${active === 3 ? 'text-primary-800' : 'text-neutral-100'}`}
                     onClick={() => handleActiveAccordion(3)}
                   >
-                    Analytics and Insights
+                    Analytics And Insights
                   </h1>
                   { active === 3 
                     && 
-                    (<div className='max-w-[350px] leading-5 text-primary-800 text-[0.8rem]'>
+                    (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
                       Gain valuable insights into your networking activities with built-in analytics tools.
                   </div>) }
               </div>
@@ -210,7 +210,7 @@ const Services = () => {
                   </h1>
                   { active === 4 
                     && 
-                    (<div className='max-w-[350px] leading-5 text-primary-800 text-[0.8rem]'>
+                    (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
                       Add your unique dreally Vcard URL to all the platforms and places you find your audience. Then use your Dreally Card to drive your offline traffic online. 
                   </div>) }
               </div>
@@ -229,7 +229,7 @@ const Services = () => {
                   </h1>
                   { active === 5 
                     && 
-                    (<div className='max-w-[350px] leading-5 text-primary-800 text-[0.8rem]'>
+                    (<div className='max-w-[350px] leading-6 text-primary-800 text-[0.9rem]'>
                         Stand out with customizable digital business cards that make a lasting impression.
                   </div>) }
               </div>

@@ -21,7 +21,7 @@ const About = () => {
               initial={{ opacity: 0, y: '100%' }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }} 
-              className="leading-5  text-neutral-300 text-[0.8em] max-w-[500px]">
+              className="leading-6 text-neutral-300 text-[0.9em] max-w-[500px]">
                 Welcome to Dreally, your ultimate networking companion! We{"'"}re here to revolutionize the way you connect, showcase your talents, and elevate your professional presence online. With sleek digital business cards, customizable portfolios, and seamless networking tools, Dreally empowers you to make meaningful connections and stand out in a crowded digital landscape. Join us and unlock new opportunities for success. Together, let{"'"}s redefine networking
             </motion.p>
             <button 
@@ -59,7 +59,7 @@ const About = () => {
 
         <div className='my-20 w-full flex-wrap flex items-start justify-center gap-8'>
         {why.map((data) => (
-          <div key={data.id} className='flex flex-col gap-3 px-5  py-5  min-h-max box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
+          <div key={data.id} className='flex flex-col gap-3 px-5  py-5  md:min-h-[280px] box bg-primary-50 rounded-2xl cursor-pointer hover:shadow-md hover:bg-primary-100 transition-all'>
             <img src={data.icon} alt="icons" className='w-[30px] h-[30px] object-cover '/>
             <h1 className='font-semibold text-base text-primary-800'>{data.title}</h1>
             <motion.p
@@ -67,7 +67,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}   
-              className='max-w-[300px] text-primary-800 text-[0.8rem] leading-5'
+              className='max-w-[300px] text-primary-800 text-[0.9rem] leading-6'
               >
                 {data.text}
             </motion.p>
