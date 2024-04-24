@@ -11,17 +11,17 @@ const Navbar = () => {
   const [isClicked, setIsClicked] = useState(0)
    
   return (
-    <section className='w-full sticky top-5 lg:top-10 z-50 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40'>
-      <nav className='w-full relative box  py-4 px-6 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
+    <section className='w-full sticky top-5 lg:top-10 z-50 px-4 sm:px-8 md:px-12'>
+      <nav className='w-full relative box  py-3 px-5 bg-primary-50 flex items-center justify-between rounded-[100px] z-20'>
         <div className='flex items-center gap-8'>
           <Link to='/'>
-            <img src={logo} alt="logo" className='px-4 w-[150px]'/>
+            <img src={logo} alt="logo" className='px-4 w-[120px]'/>
           </Link>
           <div className='hidden lg:flex items-center gap-6 relative'>
             {navLinks.map((nav) => (
               <div  
                 key={nav.id} 
-                className='capitalize text-[1rem] cursor-pointer'>
+                className='capitalize text-[0.8rem] cursor-pointer'>
                   <NavLink to={nav?.path || nav?.item?.url} className=' nav font-Sora no-underline text-primary-900 flex items-center p-3 hover:text-black rounded-md transition-all'>
                     <div>
                       {nav.name}
@@ -45,12 +45,12 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-4 h-full'>
           <Link className='no-underline' to='https://app.dreally.com/login'>
-            <button className='hidden lg:block px-16 py-6 bg-transparent border-[1px] border-gray-400 rounded-[100px] cursor-pointer'>Sign In</button>
+            <button className='hidden lg:block px-10 py-4 bg-transparent border-[1px] border-gray-400 rounded-[100px] cursor-pointer text-[0.6rem]'>Sign In</button>
           </Link>
           <Link className='no-underline' to='https://app.dreally.com/register'>
-            <button className='hidden lg:block px-10 py-6 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer'>Get Started Free</button>
+            <button className='hidden lg:block px-5 py-4 bg-primary-500 border-none text-white rounded-[100px] cursor-pointer text-[0.6rem]'>Get Started Free</button>
           </Link>
           <div 
             onClick={() => setIsOpen((prev) => (!prev))}

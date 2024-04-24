@@ -5,7 +5,7 @@ const Carousel = () => {
     <section className='banner-wraper'>
         <div className='wraper'>
             <div className='images flex gap-6 px-5'>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer object-cover' src={slide1} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Freelancers and Creatives</h1>
@@ -14,7 +14,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide2} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Professional Services</h1>
@@ -23,7 +23,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide3} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Content Creators</h1>
@@ -32,7 +32,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide4} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Event Organizers</h1>
@@ -41,7 +41,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide5} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Small Businesses</h1>
@@ -50,7 +50,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide6} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Job Seekers</h1>
@@ -59,7 +59,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide7} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Educators and Coaches</h1>
@@ -68,7 +68,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide8} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Business Professionals</h1>
@@ -80,7 +80,7 @@ const Carousel = () => {
             </div>
 
             <div className='images flex gap-6 px-5'>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide1} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Freelancers and Creatives</h1>
@@ -89,7 +89,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide2} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Professional Services</h1>
@@ -98,7 +98,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide3} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Content Creators</h1>
@@ -107,7 +107,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide4} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Event Organizers</h1>
@@ -116,7 +116,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[300px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[300px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide5} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Small Businesses</h1>
@@ -125,7 +125,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide6} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Job Seekers</h1>
@@ -134,7 +134,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide7} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Educators and Coaches</h1>
@@ -143,7 +143,7 @@ const Carousel = () => {
                         </p>
                     </span>
                 </div>
-                <div className='relative holder bg-black h-[350px] w-[400px] md:h-[540px] md:w-[600px] overflow-hidden rounded-[40px] transition-all'>
+                <div className='relative holder bg-black h-[350px] w-[400px] overflow-hidden rounded-[40px] transition-all'>
                     <img className='w-full cursor-pointer' src={slide8} alt="" />
                     <span className='w-full px-20 absolute hidden text-white top-[50%] left-[50%] hov_txt'>
                         <h1 className='text-primary-300 text-[1rem] md:text-[1.5rem] text-center'>Business Professionals</h1>

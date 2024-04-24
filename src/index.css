@@ -27,7 +27,7 @@
 
 .images {
   display: flex;
-  animation:  swipe 80000ms linear infinite;
+  animation:  swipe 50000ms linear infinite;
 }
 
 @keyframes swipe {

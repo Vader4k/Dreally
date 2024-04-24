@@ -13,20 +13,20 @@ const Hero = () => {
 
 
   return (
-    <section className="w-full mt-10 lg:mt-0 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh] justify-between px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40 overflow-hidden">
-      <div className="flex flex-col gap-5 items-start lg:w-[50%] mb-20">
+    <section className="w-full mt-10 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh] justify-between px-6 sm:px-8 md:px-12 overflow-hidden">
+      <div className="flex flex-col gap-3 items-start w-full mb-20">
         <motion.h1
           initial={{ opacity: 0, x: '-100%' }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] max-w lg:leading-[4.6rem]">
+          className="font-extrabold w-full max-w-[600px] text-[2rem] lg:text-[2.5rem] lg:leading-[3rem]">
           Empower your online presence with Dreally, your all in one platform.
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: '100%' }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
-          className="leading-6 text-neutral-300 text-[1.13rem] max-w-[600px]">
+          className="leading-5 text-neutral-300 text-[0.8rem] max-w-[500px]">
           Join the community of professionals taking their online presence to the next level with Dreally. Connect effortlessly, showcase your expertise, and make a lasting impression. Start networking smarter today!
         </motion.p>
         <motion.div
@@ -36,14 +36,14 @@ const Hero = () => {
           className='flex items-center gap-5'>
             <Link to='https://app.dreally.com/register'>
             <button 
-              className="py-4 my-5 px-12 md:px-16 lg:px-24 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
+              className="py-4 my-3 px-8 border-none cursor-pointer text-white outline-none rounded-[100px] bg-primary-500"
             >
               Sign Up, its free!
             </button>
             </Link>
 
-          <div className='w-[70px] h-[70px] rounded-full flex items-center justify-center bg-primary-400'>
-            <img className='animate-pulse w-[50px] cursor-pointer' src={play} alt="play" />
+          <div className='w-[40px] h-[40px] rounded-full flex items-center justify-center bg-primary-400'>
+            <img className='animate-pulse w-[30px] cursor-pointer' src={play} alt="play" />
           </div>
         </motion.div>
 
@@ -53,11 +53,11 @@ const Hero = () => {
           transition={{ duration: 2.5 }} 
           className='flex items-center gap-4'>
           <div className='flex items-center'>
-            <img className='w-[200px] md:w-full' src={group} alt="group" />
+            <img className='w-[200px]' src={group} alt="group" />
           </div>
           <div className='flex flex-col'>
-            <h1 className='font-semibold text-xl md:text-3xl font-Sora'>2000+</h1>
-            <p className='text-neutral-300 font-Sora'>Portfolios</p>
+            <h1 className='font-semibold text-xl font-Sora'>2000+</h1>
+            <p className='text-neutral-300 font-Sora text-[0.8rem]'>Portfolios</p>
           </div>
         </motion.div>
       </div>
@@ -66,7 +66,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: '100%' }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }} 
-        className='mb-20 w-full lg:w-[50%] h-fit'>
+        className=' w-full lg:w-[40%] h-fit mb-20'>
         <Swiper
           className='w-full h-full'
           modules={[Autoplay ]}

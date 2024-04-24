@@ -13,11 +13,11 @@ const FaQs = () => {
   }
 
   return (
-    <section className="w-full flex items-center justify-center py-20 lg:py-48 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-40">
+    <section className="w-full flex items-center justify-center py-20 lg:py-28 px-6 sm:px-8 md:px-12">
       <div className="flex flex-col gap-5">
         <div className="text-center">
-          <h1 className="text-[2rem] font-extrabold">Frequently Asked Questions</h1>
-          <p className="text-neutral-300 py-4">Get answers to all the questions bothering you</p>
+          <h1 className="text-xl font-extrabold">Frequently Asked Questions</h1>
+          <p className="text-neutral-300 py-4 text-[0.8rem]">Get answers to all the questions bothering you</p>
         </div>
 
         <div className="w-full flex flex-col gap-6 mt-5">
@@ -27,7 +27,7 @@ const FaQs = () => {
               className="w-full flex items-center justify-between"
               onClick={() => handleClick(item.id)} // Pass ID to handleClick
             >
-              <h1 className="text-[1.2rem] lg:text-[1.5rem] font-bold">{item.title}</h1>
+              <h1 className="text-[1rem] font-bold">{item.title}</h1>
               <img 
                 src={active === item.id ? down : up} 
                 alt="arrow" 
@@ -39,7 +39,7 @@ const FaQs = () => {
                 initial={{ opacity: 0, y: '50%' }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}  
-                className="text-[1rem] max-w-[800px] leading-7 text-neutral-300">
+                className="text-[0.8rem] max-w-[600px] leading-5 text-neutral-300">
                 {item.reply}
               </motion.div>
             )}
